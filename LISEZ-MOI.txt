@@ -1,0 +1,82 @@
+MON INFORMATICIEN NORD — SITE STATIQUE (HTML / CSS / JS)
+==========================================================
+
+CONTENU DU DOSSIER
+-------------------
+- index.html                    (Accueil)
+- depannage-particuliers.html
+- depannage-professionnels.html
+- audit-parc-informatique.html
+- creation-site-internet.html
+- materiel-informatique.html
+- assistance-ia.html
+- zone-intervention.html
+- a-propos.html
+- contact.html
+- css/style.css                 (tous les styles du site)
+- js/script.js                  (menu mobile, animations au scroll, compteurs)
+- images/                       (mets ton logo.png ici, voir le fichier dans ce dossier)
+
+
+ÉTAPE 1 — METTRE LE SITE EN LIGNE SUR HOSTINGER
+-------------------------------------------------
+1. Connecte-toi à hPanel (Hostinger)
+2. Va dans "Sites web" -> ton domaine -> "Gestionnaire de fichiers"
+3. Ouvre le dossier "public_html" (c'est la racine de ton site)
+4. Si des fichiers restent d'une ancienne installation, vérifie qu'ils sont bien
+   supprimés/vidés avant de continuer (pour éviter les conflits)
+5. Uploade TOUT le contenu de ce dossier (pas le dossier "site-html" lui-même,
+   mais tout ce qu'il y a DEDANS : index.html, css/, js/, images/, etc.)
+   directement à la racine de public_html
+6. Ajoute ton fichier logo dans images/logo.png (voir le fichier
+   AJOUTE_TON_LOGO_ICI.txt dans le dossier images)
+
+
+ÉTAPE 2 — ACTIVER LE FORMULAIRE DE CONTACT
+---------------------------------------------
+Un site en HTML pur n'a pas de serveur pour envoyer les e-mails du formulaire.
+On utilise donc Formspree (gratuit, sans code) :
+
+1. Va sur https://formspree.io et crée un compte gratuit
+2. Crée un nouveau formulaire ("New Form")
+3. Renseigne l'adresse e-mail où tu veux recevoir les messages
+   (ex: support@moninformaticiennord.fr)
+4. Formspree te donne une URL du type : https://formspree.io/f/abcd1234
+5. Ouvre le fichier contact.html, cherche la ligne :
+     action="https://formspree.io/f/VOTRE_ID_FORMSPREE"
+   et remplace VOTRE_ID_FORMSPREE par ton identifiant (ex: abcd1234)
+6. Réenregistre le fichier et re-uploade-le sur Hostinger
+
+
+ÉTAPE 3 — À COMPLÉTER DANS LE CODE
+--------------------------------------
+Cherche ces éléments dans les fichiers HTML et remplace-les par tes vraies infos :
+- "[à compléter]"  -> ton numéro de téléphone et tes horaires
+                       (présents en bas de chaque page + sur la page Contact)
+- Le texte entre crochets dans a-propos.html -> ta présentation personnelle
+
+Astuce : dans un éditeur de texte (Bloc-notes, VS Code, Notepad++...), utilise
+"Rechercher dans tous les fichiers" pour trouver "[à compléter]" partout d'un coup.
+
+
+ÉTAPE 4 — RÉFÉRENCEMENT (SEO)
+---------------------------------
+Chaque page a déjà un titre et une description optimisés dans le <head>
+(balises <title> et <meta description>). Rien à faire de plus pour l'instant.
+
+Pense à créer ta fiche Google Business Profile (gratuite) au nom de
+"Mon Informaticien Nord", catégorie "Réparation d'ordinateurs" / "Support
+informatique", zone d'action : métropole lilloise.
+
+
+BESOIN DE CHANGER UN TEXTE PLUS TARD ?
+------------------------------------------
+Comme il n'y a pas de CMS (pas d'admin comme WordPress), toute modification de
+texte se fait en éditant directement le fichier .html concerné avec un éditeur
+de texte, puis en le re-uploadant sur Hostinger à la même place.
+
+Le menu de navigation et le pied de page sont dupliqués dans chaque fichier
+HTML (c'est normal en HTML pur, il n'y a pas de système d'inclusion) : si tu
+changes une info du menu ou du footer (ex: le téléphone), il faut la changer
+dans les 10 fichiers. Dis-le-moi si tu veux, je peux te régénérer tous les
+fichiers d'un coup après une modification.

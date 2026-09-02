@@ -1,0 +1,6 @@
+Place ton fichier logo dans ce dossier "images", et nomme-le exactement : logo.png
+
+C'est le fichier que tu m'as envoyé (l'infini bleu/violet "Mon Informaticien Nord").
+Toutes les pages du site vont automatiquement le chercher à cet emplacement : /images/logo.png
+
+Tu peux supprimer ce fichier texte une fois le logo ajouté.
