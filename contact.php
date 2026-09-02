@@ -1,10 +1,35 @@
+<?php
+$success = false;
+$error = false;
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = trim($_POST['name'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $message = trim($_POST['message'] ?? '');
+
+    if ($name !== '' && filter_var($email, FILTER_VALIDATE_EMAIL) && $message !== '') {
+        $to = "support@moninformaticiennord.fr";
+        $subject = "Nouveau message depuis le site - $name";
+        $body = "Nom : $name\nE-mail : $email\n\nMessage :\n$message";
+        $headers = "From: no-reply@moninformaticiennord.fr\r\nReply-To: $email";
+
+        if (mail($to, $subject, $body, $headers)) {
+            $success = true;
+        } else {
+            $error = true;
+        }
+    } else {
+        $error = true;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Informaticien métropole lilloise – Zones d'intervention</title>
-<meta name="description" content="Intervention à Lille, Roubaix, Tourcoing, Villeneuve-d'Ascq et dans toute la métropole lilloise.">
+<title>Contact – Mon Informaticien Nord</title>
+<meta name="description" content="Contactez Mon Informaticien Nord pour un dépannage, un devis ou toute question. Intervention dans la métropole lilloise.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
@@ -43,14 +68,33 @@
 <main>
 
 <div class="page-content">
-  <h1 class="min-reveal">Nos zones d'intervention dans la métropole lilloise</h1>
-  <p class="min-reveal">Mon Informaticien Nord intervient chez les particuliers et les professionnels dans toute la métropole lilloise, notamment :</p>
-  <div class="city-list min-reveal">
-    <span>Lille</span><span>Roubaix</span><span>Tourcoing</span><span>Villeneuve-d'Ascq</span>
-    <span>Marcq-en-Barœul</span><span>Wattrelos</span><span>Mons-en-Barœul</span>
-    <span>Wasquehal</span><span>Croix</span><span>Lambersart</span>
+  <h1 class="min-reveal">Contactez Mon Informaticien Nord</h1>
+  <p class="min-reveal">Une question, une panne, un devis à demander ? Remplissez le formulaire ci-dessous ou appelez-nous directement.</p>
+
+  <?php if ($success): ?>
+    <div class="form-message success">Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.</div>
+  <?php elseif ($error): ?>
+    <div class="form-message error">Une erreur est survenue. Vérifiez vos informations ou contactez-nous directement par téléphone.</div>
+  <?php endif; ?>
+
+  <form class="contact-form min-reveal" method="POST" action="/contact.php">
+    <label for="name">Nom complet</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Votre message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit" class="btn-primary">Envoyer</button>
+  </form>
+
+  <div class="contact-info min-reveal">
+    <div><strong>Zone d'intervention</strong>Métropole lilloise</div>
+    <div><strong>Horaires</strong>Lundi - Vendredi, 9h - 19h</div>
+    <div><strong>Téléphone</strong>07 60 26 63 32</div>
   </div>
-  <p class="min-reveal">Votre commune n'est pas dans la liste ? <a href="/contact.php">Contactez-nous</a>, nous intervenons aussi aux alentours.</p>
 </div>
 
 </main>

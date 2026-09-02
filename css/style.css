@@ -180,6 +180,10 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
 .contact-form textarea{ min-height:140px; resize:vertical; }
 .contact-form button{ margin-top:20px; border:none; cursor:pointer; font-family:inherit; font-size:1rem; }
 
+.form-message{ padding:14px 18px; border-radius:8px; margin-bottom:20px; font-size:.95rem; }
+.form-message.success{ background:#DCF5E0; color:#1E7A34; }
+.form-message.error{ background:#FBE1E1; color:#B02A2A; }
+
 /* Reveal animation */
 .min-reveal{ opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease; transition-delay:var(--d,0s); }
 .min-reveal.is-visible{ opacity:1; transform:translateY(0); }
