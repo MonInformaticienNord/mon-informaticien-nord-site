@@ -27,9 +27,9 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
 }
 .header-inner{
   display:flex; align-items:center; justify-content:space-between;
-  padding:14px 24px;
+  padding:6px 24px;
 }
-.logo img{ height:72px; }
+.logo img{ height:120px; }
 
 .main-nav ul{
   list-style:none; display:flex; align-items:center; gap:28px;
