@@ -226,7 +226,7 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
 
 /* Footer */
 .site-footer{ background:var(--min-dark); color:#C9CDE0; margin-top:60px; }
-.footer-inner{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:32px; padding:48px 24px; }
+.footer-inner{ display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:32px; padding:48px 24px; }
 .footer-logo{
   height:40px;
   margin-bottom:12px;
@@ -238,6 +238,9 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
 .footer-col h3{ color:#fff; font-size:1rem; margin-bottom:10px; }
 .footer-col p{ font-size:.9rem; }
 .footer-col a{ color:#C9CDE0; }
+.hours-list{ list-style:none; font-size:.9rem; }
+.hours-list li{ display:flex; justify-content:space-between; gap:12px; padding:3px 0; }
+.hours-list li span:first-child{ opacity:.8; }
 .footer-bottom{ border-top:1px solid rgba(255,255,255,.1); padding:18px 0; text-align:center; font-size:.82rem; }
 
 @media (max-width:600px){

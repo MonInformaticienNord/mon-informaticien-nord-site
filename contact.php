@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css?v=3">
+<link rel="stylesheet" href="/css/style.css?v=4">
 </head>
 <body>
 <header class="site-header">
@@ -104,6 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="container footer-inner">
     <div class="footer-col">
       <img src="/images/logo.png" alt="Mon Informaticien Nord" class="footer-logo">
+      <h3>Mon Informaticien Nord</h3>
       <p>Informaticien de proximité dans la métropole lilloise.</p>
     </div>
     <div class="footer-col">
@@ -112,7 +113,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div class="footer-col">
       <h3>Contact</h3>
-      <p>Téléphone : 07 60 26 63 32<br>Horaires : Lundi - Vendredi, 9h - 19h</p>
+      <p>07 60 26 63 32</p>
+    </div>
+    <div class="footer-col">
+      <h3>Horaires</h3>
+      <ul class="hours-list">
+        <li><span>Lundi</span><span>9h - 19h</span></li>
+        <li><span>Mardi</span><span>9h - 19h</span></li>
+        <li><span>Mercredi</span><span>9h - 19h</span></li>
+        <li><span>Jeudi</span><span>9h - 19h</span></li>
+        <li><span>Vendredi</span><span>9h - 19h</span></li>
+        <li><span>Samedi</span><span>Fermé</span></li>
+        <li><span>Dimanche</span><span>Fermé</span></li>
+      </ul>
     </div>
   </div>
   <div class="footer-bottom">
