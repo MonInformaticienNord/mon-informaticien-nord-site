@@ -29,7 +29,7 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
   display:flex; align-items:center; justify-content:space-between;
   padding:14px 24px;
 }
-.logo img{ height:56px; }
+.logo img{ height:72px; }
 
 .main-nav ul{
   list-style:none; display:flex; align-items:center; gap:28px;
@@ -123,10 +123,8 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
 }
 .min-card:hover{ transform:translateY(-4px); box-shadow:0 12px 24px rgba(47,111,224,.15); border-color:var(--min-blue); }
 .min-icon{
-  width:34px;
-  height:34px;
+  font-size:2rem;
   margin-bottom:12px;
-  color: var(--min-blue);
   display:block;
   transition: transform .3s cubic-bezier(.34,1.56,.64,1);
 }
