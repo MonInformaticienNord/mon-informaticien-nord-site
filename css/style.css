@@ -145,6 +145,29 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
 }
 .min-stat-label{ font-size:.9rem; color:var(--min-text-soft); margin-top:6px; }
 
+/* Comment ça marche */
+.process-section{ max-width:1100px; margin:48px auto; padding:0 24px; }
+.process-section h2{ text-align:center; font-size:1.6rem; margin-bottom:32px; }
+.process-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+@media (max-width:760px){ .process-grid{ grid-template-columns:1fr; } }
+.process-step{ text-align:center; position:relative; }
+.process-num{
+  width:44px; height:44px; border-radius:50%;
+  background:linear-gradient(135deg,var(--min-blue),var(--min-violet));
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  font-family:'Sora',sans-serif; font-weight:800; font-size:1.1rem;
+  margin:0 auto 14px;
+}
+.process-step h3{ font-size:1.05rem; margin-bottom:8px; }
+.process-step p{ font-size:.9rem; color:var(--min-text-soft); }
+@media (min-width:761px){
+  .process-step:not(:last-child)::after{
+    content:"";
+    position:absolute; top:22px; left:calc(50% + 40px); width:calc(100% - 60px);
+    height:2px; background:var(--min-border);
+  }
+}
+
 /* Cards grid */
 .min-grid{
   display:grid; grid-template-columns:repeat(3,1fr);
