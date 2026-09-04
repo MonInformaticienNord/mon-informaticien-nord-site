@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css?v=10">
+<link rel="stylesheet" href="/css/style.css?v=11">
 </head>
 <body>
 <header class="site-header">
@@ -52,7 +52,7 @@
   <a href="/contact.php" class="btn-white">Demander un diagnostic gratuit</a>
 </div>
 
-<div class="min-stats">
+<div class="min-stats section-tint">
   <div class="min-reveal" style="--d:.05s">
     <div class="min-stat-num" data-count="10">0</div>
     <div class="min-stat-label">villes desservies dans la métropole lilloise</div>
@@ -88,65 +88,71 @@
   </div>
 </div>
 
-<div class="service-category min-reveal">
-  <h2>Dépannage &amp; Audit</h2>
-  <p class="category-sub">Remettre votre matériel en état, et faire le point sur votre parc.</p>
-</div>
-<div class="min-grid">
-  <a class="min-card min-reveal" style="--d:0s" href="/depannage-particuliers.html">
-    <span class="min-icon">🛠️</span>
-    <h3>Dépannage particuliers</h3>
-    <p>Virus, lenteur, imprimante en panne : intervention à domicile ou à distance.</p>
-  </a>
-  <a class="min-card min-reveal" style="--d:.05s" href="/depannage-professionnels.html">
-    <span class="min-icon">💼</span>
-    <h3>Dépannage professionnels</h3>
-    <p>Support réactif pour TPE/PME, sur site ou à distance.</p>
-  </a>
-  <a class="min-card min-reveal" style="--d:.1s" href="/audit-parc-informatique.html">
-    <span class="min-icon">🔍</span>
-    <h3>Audit de parc informatique</h3>
-    <p>État des lieux complet et plan d'action priorisé.</p>
-  </a>
-</div>
-
-<div class="service-category min-reveal">
-  <h2>Équipement &amp; Sauvegarde</h2>
-  <p class="category-sub">Le bon matériel, et vos données toujours en sécurité.</p>
-</div>
-<div class="min-grid">
-  <a class="min-card min-reveal" style="--d:0s" href="/materiel-informatique.html">
-    <span class="min-icon">🖥️</span>
-    <h3>Vente de matériel</h3>
-    <p>Ordinateurs et équipements neufs ou reconditionnés, installés chez vous.</p>
-  </a>
-  <a class="min-card min-reveal" style="--d:.05s" href="/sauvegarde-cloud.html">
-    <span class="min-icon">☁️</span>
-    <h3>Sauvegarde cloud</h3>
-    <p>Protégez vos photos, documents et données contre la perte.</p>
-  </a>
+<div class="category-panel section-tint">
+  <div class="service-category min-reveal">
+    <h2>Dépannage &amp; Audit</h2>
+    <p class="category-sub">Remettre votre matériel en état, et faire le point sur votre parc.</p>
+  </div>
+  <div class="min-grid">
+    <a class="min-card min-reveal" style="--d:0s" href="/depannage-particuliers.html">
+      <span class="min-icon">🛠️</span>
+      <h3>Dépannage particuliers</h3>
+      <p>Virus, lenteur, imprimante en panne : intervention à domicile ou à distance.</p>
+    </a>
+    <a class="min-card min-reveal" style="--d:.05s" href="/depannage-professionnels.html">
+      <span class="min-icon">💼</span>
+      <h3>Dépannage professionnels</h3>
+      <p>Support réactif pour TPE/PME, sur site ou à distance.</p>
+    </a>
+    <a class="min-card min-reveal" style="--d:.1s" href="/audit-parc-informatique.html">
+      <span class="min-icon">🔍</span>
+      <h3>Audit de parc informatique</h3>
+      <p>État des lieux complet et plan d'action priorisé.</p>
+    </a>
+  </div>
 </div>
 
-<div class="service-category min-reveal">
-  <h2>Digital &amp; Formation</h2>
-  <p class="category-sub">Votre présence en ligne, et la prise en main des outils numériques.</p>
+<div class="category-panel section-tint">
+  <div class="service-category min-reveal">
+    <h2>Équipement &amp; Sauvegarde</h2>
+    <p class="category-sub">Le bon matériel, et vos données toujours en sécurité.</p>
+  </div>
+  <div class="min-grid">
+    <a class="min-card min-reveal" style="--d:0s" href="/materiel-informatique.html">
+      <span class="min-icon">🖥️</span>
+      <h3>Vente de matériel</h3>
+      <p>Ordinateurs et équipements neufs ou reconditionnés, installés chez vous.</p>
+    </a>
+    <a class="min-card min-reveal" style="--d:.05s" href="/sauvegarde-cloud.html">
+      <span class="min-icon">☁️</span>
+      <h3>Sauvegarde cloud</h3>
+      <p>Protégez vos photos, documents et données contre la perte.</p>
+    </a>
+  </div>
 </div>
-<div class="min-grid">
-  <a class="min-card min-reveal" style="--d:0s" href="/creation-site-internet.html">
-    <span class="min-icon">🌐</span>
-    <h3>Création de sites internet</h3>
-    <p>Sites rapides, responsives et optimisés pour Google.</p>
-  </a>
-  <a class="min-card min-reveal" style="--d:.05s" href="/assistance-ia.html">
-    <span class="min-icon">✨</span>
-    <h3>Assistance IA <small style="opacity:.6;">(bientôt)</small></h3>
-    <p>Un accompagnement pour intégrer l'IA à votre quotidien.</p>
-  </a>
-  <a class="min-card min-reveal" style="--d:.1s" href="/formation-informatique.html">
-    <span class="min-icon">🎓</span>
-    <h3>Formation informatique</h3>
-    <p>Prise en main, bureautique, sécurité numérique — à votre rythme.</p>
-  </a>
+
+<div class="category-panel section-tint">
+  <div class="service-category min-reveal">
+    <h2>Digital &amp; Formation</h2>
+    <p class="category-sub">Votre présence en ligne, et la prise en main des outils numériques.</p>
+  </div>
+  <div class="min-grid">
+    <a class="min-card min-reveal" style="--d:0s" href="/creation-site-internet.html">
+      <span class="min-icon">🌐</span>
+      <h3>Création de sites internet</h3>
+      <p>Sites rapides, responsives et optimisés pour Google.</p>
+    </a>
+    <a class="min-card min-reveal" style="--d:.05s" href="/assistance-ia.html">
+      <span class="min-icon">✨</span>
+      <h3>Assistance IA <small style="opacity:.6;">(bientôt)</small></h3>
+      <p>Un accompagnement pour intégrer l'IA à votre quotidien.</p>
+    </a>
+    <a class="min-card min-reveal" style="--d:.1s" href="/formation-informatique.html">
+      <span class="min-icon">🎓</span>
+      <h3>Formation informatique</h3>
+      <p>Prise en main, bureautique, sécurité numérique — à votre rythme.</p>
+    </a>
+  </div>
 </div>
 
 <div class="reviews-section section-tint">
