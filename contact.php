@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css?v=4">
+<link rel="stylesheet" href="/css/style.css?v=5">
 </head>
 <body>
 <header class="site-header">
@@ -60,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <li><a href="/sauvegarde-cloud.html">Sauvegarde cloud</a></li>
           </ul>
         </li>
+        <li><a href="/tarifs.html">Tarifs</a></li>
         <li><a href="/zone-intervention.html">Zone d'intervention</a></li>
         <li><a href="/a-propos.html">À propos</a></li>
         <li><a href="/contact.php" class="nav-cta">Contact</a></li>
