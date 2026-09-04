@@ -1,28 +1,3 @@
-<?php
-$success = false;
-$error = false;
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = trim($_POST['name'] ?? '');
-    $email = trim($_POST['email'] ?? '');
-    $message = trim($_POST['message'] ?? '');
-
-    if ($name !== '' && filter_var($email, FILTER_VALIDATE_EMAIL) && $message !== '') {
-        $to = "support@moninformaticiennord.fr";
-        $subject = "Nouveau message depuis le site - $name";
-        $body = "Nom : $name\nE-mail : $email\n\nMessage :\n$message";
-        $headers = "From: no-reply@moninformaticiennord.fr\r\nReply-To: $email";
-
-        if (mail($to, $subject, $body, $headers)) {
-            $success = true;
-        } else {
-            $error = true;
-        }
-    } else {
-        $error = true;
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -33,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css?v=8">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <header class="site-header">
@@ -56,14 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <li><a href="/creation-site-internet.html">Création de sites internet</a></li>
             <li><a href="/materiel-informatique.html">Vente de matériel</a></li>
             <li><a href="/assistance-ia.html">Assistance IA <span class="badge">bientôt</span></a></li>
-            <li><a href="/formation-informatique.html">Formation informatique</a></li>
-            <li><a href="/sauvegarde-cloud.html">Sauvegarde cloud</a></li>
           </ul>
         </li>
-        <li><a href="/tarifs.html">Tarifs</a></li>
         <li><a href="/zone-intervention.html">Zone d'intervention</a></li>
         <li><a href="/a-propos.html">À propos</a></li>
-        <li><a href="/contact.php" class="nav-cta">Contact</a></li>
+        <li><a href="/contact.html" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -74,13 +46,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <h1 class="min-reveal">Contactez Mon Informaticien Nord</h1>
   <p class="min-reveal">Une question, une panne, un devis à demander ? Remplissez le formulaire ci-dessous ou appelez-nous directement.</p>
 
-  <?php if ($success): ?>
-    <div class="form-message success">Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.</div>
-  <?php elseif ($error): ?>
-    <div class="form-message error">Une erreur est survenue. Vérifiez vos informations ou contactez-nous directement par téléphone.</div>
-  <?php endif; ?>
-
-  <form class="contact-form min-reveal" method="POST" action="/contact.php">
+  <!--
+    Ce formulaire utilise Formspree (service gratuit) pour recevoir les messages par e-mail,
+    car un site HTML pur n'a pas de serveur pour traiter l'envoi.
+    1. Va sur https://formspree.io et crée un compte gratuit
+    2. Crée un nouveau formulaire, renseigne ton e-mail de réception
+    3. Formspree te donne une URL du type https://formspree.io/f/abcd1234
+    4. Remplace VOTRE_ID_FORMSPREE ci-dessous par "abcd1234"
+  -->
+  <form class="contact-form min-reveal" action="https://formspree.io/f/xjyvrree" method="POST">
     <label for="name">Nom complet</label>
     <input type="text" id="name" name="name" required>
 
@@ -105,7 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="container footer-inner">
     <div class="footer-col">
       <img src="/images/logo.png" alt="Mon Informaticien Nord" class="footer-logo">
-      <h3>Mon Informaticien Nord</h3>
       <p>Informaticien de proximité dans la métropole lilloise.</p>
     </div>
     <div class="footer-col">
@@ -114,19 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div class="footer-col">
       <h3>Contact</h3>
-      <p>07 60 26 63 32</p>
-    </div>
-    <div class="footer-col">
-      <h3>Horaires</h3>
-      <ul class="hours-list">
-        <li><span>Lundi</span><span>9h - 19h</span></li>
-        <li><span>Mardi</span><span>9h - 19h</span></li>
-        <li><span>Mercredi</span><span>9h - 19h</span></li>
-        <li><span>Jeudi</span><span>9h - 19h</span></li>
-        <li><span>Vendredi</span><span>9h - 19h</span></li>
-        <li><span>Samedi</span><span>Fermé</span></li>
-        <li><span>Dimanche</span><span>Fermé</span></li>
-      </ul>
+      <p>Téléphone : 07 60 26 63 32<br>Horaires : Lundi - Vendredi, 9h - 19h</p>
     </div>
   </div>
   <div class="footer-bottom">
