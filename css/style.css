@@ -309,3 +309,11 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
   .hero{ padding:40px 24px; }
   .hero h1{ font-size:1.6rem; }
 }
+
+@media (max-width:760px){
+  .min-stats{ margin:48px auto; padding:28px 20px; }
+  .process-section{ margin:48px auto; padding:28px 20px; }
+  .category-panel{ margin:48px auto; padding:28px 20px; }
+  .reviews-section{ margin:48px auto; padding:28px 20px; }
+  .min-cta-band{ margin:48px auto; }
+}
