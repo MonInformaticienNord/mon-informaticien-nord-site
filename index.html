@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css?v=6">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 </head>
 <body>
 <header class="site-header">
@@ -129,12 +128,6 @@
   </a>
 </div>
 
-<div class="map-section min-reveal">
-  <h2>Où j'interviens</h2>
-  <p class="reviews-sub">Clique sur un point pour voir la ville</p>
-  <div id="service-map" class="service-map"></div>
-</div>
-
 <div class="reviews-section">
   <h2 class="min-reveal">Ce que disent mes clients</h2>
   <p class="reviews-sub min-reveal">★★★★★ 14 avis Google · 286 avis AlloVoisins</p>
@@ -206,34 +199,6 @@
     <div class="container">&copy; 2026 Mon Informaticien Nord. Tous droits réservés.</div>
   </div>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="/js/script.js"></script>
-<script>
-(function(){
-  var el = document.getElementById('service-map');
-  if(!el || typeof L === 'undefined') return;
-  var map = L.map('service-map', { scrollWheelZoom: false }).setView([50.656, 3.13], 11);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap',
-    maxZoom: 18
-  }).addTo(map);
-
-  var cities = [
-    ['Lille', 50.6292, 3.0573],
-    ['Roubaix', 50.6942, 3.1746],
-    ['Tourcoing', 50.7236, 3.1614],
-    ["Villeneuve-d'Ascq", 50.6211, 3.1478],
-    ['Marcq-en-Barœul', 50.6764, 3.0906],
-    ['Wattrelos', 50.7061, 3.2172],
-    ['Mons-en-Barœul', 50.6425, 3.1017],
-    ['Wasquehal', 50.6669, 3.1272],
-    ['Croix', 50.6822, 3.1494],
-    ['Lambersart', 50.6486, 3.0331]
-  ];
-  cities.forEach(function(c){
-    L.marker([c[1], c[2]]).addTo(map).bindPopup('<strong>' + c[0] + '</strong>');
-  });
-})();
-</script>
 </body>
 </html>

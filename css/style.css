@@ -183,13 +183,6 @@ h1,h2,h3{ font-family:'Sora', system-ui, sans-serif; color: var(--min-dark); fon
 .price-list-item h4{ font-size:1rem; font-weight:600; }
 .price-list-item span{ font-weight:700; color:var(--min-blue); white-space:nowrap; }
 .price-note{ max-width:760px; margin:0 auto 40px; padding:0 24px; font-size:.85rem; color:var(--min-text-soft); text-align:center; }
-
-/* Carte des zones d'intervention */
-.map-section{ max-width:700px; margin:56px auto; padding:0 24px; text-align:center; }
-.map-section h2{ font-size:1.6rem; margin-bottom:6px; }
-.map-section .reviews-sub{ margin-bottom:20px; }
-.service-map{ height:320px; border-radius:16px; overflow:hidden; border:1px solid var(--min-border); box-shadow:0 2px 10px rgba(18,22,58,.05); }
-.service-map .leaflet-popup-content strong{ color:var(--min-blue); }
 .min-card{
   display:block; background:#fff; border:1px solid var(--min-border); border-radius:14px;
   padding:26px 22px; box-shadow:0 2px 10px rgba(18,22,58,.05);
