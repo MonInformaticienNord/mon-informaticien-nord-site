@@ -317,7 +317,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <li><a href="/sauvegarde-cloud.html">Sauvegarde cloud</a></li>
           </ul>
         </li>
-        <li><a href="/tarifs.html">Tarifs</a></li>
         <li><a href="/zone-intervention.html">Zone d'intervention</a></li>
         <li><a href="/a-propos.html">À propos</a></li>
       </ul>
