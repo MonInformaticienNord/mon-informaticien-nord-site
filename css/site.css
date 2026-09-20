@@ -70,6 +70,17 @@ nav.main a:hover{ color:var(--blue); }
   .has-dropdown.open .dropdown-menu{ display:flex; }
   .nav-toggle{ display:inline-block; }
 }
+@media (max-width:480px){
+  header.site .row{ gap:10px; }
+  .brand .word small{ display:none; }
+  .brand .word{ font-size:.86rem; }
+  .brand-logo{ height:38px; }
+  .tel-btn{ padding:9px 12px; font-size:.78rem; }
+  .nav-toggle{ padding:8px 9px; font-size:.78rem; }
+}
+@media (max-width:360px){
+  .brand .word{ display:none; }
+}
 
 /* Hero */
 .hero{ background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg-bottom) 100%); padding:64px 0 0; overflow:hidden; }
