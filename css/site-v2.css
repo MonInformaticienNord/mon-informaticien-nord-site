@@ -11,10 +11,10 @@
   --violet-strong: #6d3bf5;
   --violet-tint: color-mix(in srgb, #7c3aed 8%, transparent);
   --indigo: #4f46e5;
-  --purple: #a855f7;
+  --purple: #9333ea;
   --green: #15803d;
   --gold: #c2820a;
-  --grad-brand: linear-gradient(100deg, #4f46e5, #7c3aed 52%, #a855f7);
+  --grad-brand: linear-gradient(100deg, #4f46e5, #7c3aed 52%, #9333ea);
   --font-body: "Inter", system-ui, sans-serif;
 }
 
@@ -53,6 +53,7 @@ body.v2 {
 .v2-brand-word span { font-size: 9.5px; letter-spacing: .42em; color: var(--violet); margin-top: 3px; }
 
 .v2-nav { display: flex; gap: 18px; margin-left: auto; align-items: center; flex-wrap: wrap; }
+.v2-nav-mobile-only { display: none; }
 .v2-nav a { font-size: 13.5px; color: var(--ink-soft); text-decoration: none; }
 .v2-nav a:hover { color: var(--violet-strong); }
 
@@ -87,7 +88,7 @@ body.v2 {
 .v2-badge .dot { position: relative; display: inline-flex; width: 8px; height: 8px; }
 .v2-badge .dot span { position: absolute; inset: 0; border-radius: 99px; background: var(--green); animation: minPulse 2.6s ease-in-out infinite; }
 .v2-hero h1 { font-size: clamp(38px,4.6vw,60px); line-height: 1.04; letter-spacing: -.03em; font-weight: 500; margin: 0 0 20px; text-wrap: balance; }
-.v2-hero h1 .grad { background: linear-gradient(96deg,#4f46e5,#7c3aed 46%,#a855f7); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.v2-hero h1 .grad { background: linear-gradient(96deg,#4338ca,#7c3aed 46%,#9333ea); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .v2-hero p.lede { font-size: 17px; line-height: 1.6; color: var(--muted); max-width: 520px; margin: 0 0 30px; }
 .v2-hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
 .v2-btn-primary {
@@ -198,7 +199,7 @@ a.v2-svc-card:hover, .v2-svc-card:hover { border-color: color-mix(in srgb, #7c3a
 }
 .v2-price-badge {
   position: absolute; top: -11px; left: 28px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
-  padding: 4px 11px; border-radius: 99px; background: linear-gradient(100deg,#4f46e5,#a855f7); color: #fff; font-weight: 600;
+  padding: 4px 11px; border-radius: 99px; background: linear-gradient(100deg,#4f46e5,#9333ea); color: #fff; font-weight: 600;
 }
 .v2-price-kicker { font-size: 13px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
 .v2-price-card.featured .v2-price-kicker { color: var(--violet-dark); }
@@ -365,4 +366,5 @@ a.v2-contact-card:hover { border-color: var(--violet); background: var(--violet-
   }
   .v2-header-inner { position: relative; }
   .v2-tel-btn span.txt { display: none; }
+  .v2-nav-mobile-only { display: block; }
 }
