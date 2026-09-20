@@ -108,39 +108,21 @@
   .chip svg{ width:15px; height:15px; color:var(--blue); flex-shrink:0; }
 
   .hero-visual{ position:relative; }
-  .hero-panel{
-    position:relative; border-radius:28px; overflow:hidden; aspect-ratio:4/3.3;
-    background:linear-gradient(150deg,var(--blue) 0%,var(--violet) 100%);
-    box-shadow:0 30px 60px -24px rgba(47,111,224,.45);
-    display:flex; align-items:center; justify-content:center;
+  .hero-stats-card{
+    background:#fff; border:1px solid var(--line); border-radius:24px; padding:28px;
+    box-shadow:0 30px 60px -30px rgba(21,26,46,.35);
   }
-  .hero-panel::before{
-    content:''; position:absolute; inset:0;
-    background:radial-gradient(circle at 25% 20%, rgba(255,255,255,.18), transparent 45%),
-               radial-gradient(circle at 80% 85%, rgba(255,255,255,.14), transparent 50%);
-  }
-  .hero-panel-core{
-    position:relative; width:112px; height:112px; border-radius:28px; background:rgba(255,255,255,.16);
-    border:1px solid rgba(255,255,255,.35); backdrop-filter:blur(2px);
-    display:flex; align-items:center; justify-content:center;
-  }
-  .hero-panel-core svg{ width:52px; height:52px; color:#fff; }
-  .hero-orbit{ position:absolute; width:58px; height:58px; border-radius:16px; background:var(--blue); box-shadow:0 12px 24px -8px rgba(21,26,46,.35); display:flex; align-items:center; justify-content:center; }
-  .hero-orbit svg{ width:26px; height:26px; color:#fff; }
-  .hero-orbit.o2, .hero-orbit.o4{ background:var(--violet); }
-  .hero-orbit.o1{ top:12%; left:12%; }
-  .hero-orbit.o2{ top:18%; right:10%; }
-  .hero-orbit.o3{ bottom:14%; left:8%; }
-  .hero-orbit.o4{ bottom:20%; right:14%; }
-  @media (max-width:640px){ .hero-orbit{ width:46px; height:46px; } .hero-orbit svg{ width:20px; height:20px; } }
-  .hero-badge{
-    position:absolute; bottom:-18px; left:-18px; background:#fff; border-radius:16px; padding:14px 18px;
-    box-shadow:0 16px 32px rgba(21,26,46,.18); display:flex; align-items:center; gap:12px;
-  }
-  @media (max-width:640px){ .hero-badge{ left:8px; bottom:-14px; padding:12px 14px; } }
-  .hero-badge .stars{ color:#F5A623; font-size:1rem; line-height:1; }
-  .hero-badge .num{ font-family:'Outfit',sans-serif; font-weight:800; font-size:1.15rem; }
-  .hero-badge .lbl{ font-size:.76rem; color:var(--ink-soft); }
+  .hero-stats-card .rating-row{ display:flex; align-items:center; gap:10px; padding-bottom:20px; border-bottom:1px solid var(--line); margin-bottom:20px; }
+  .hero-stats-card .rating-row .stars{ color:#F5A623; font-size:1.1rem; line-height:1; }
+  .hero-stats-card .rating-row strong{ font-family:'Outfit',sans-serif; font-size:1rem; }
+  .hero-stats-card .rating-row span{ font-size:.85rem; color:var(--ink-soft); }
+  .hero-stat-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .hero-stat{ display:flex; align-items:center; gap:12px; }
+  .hero-stat .s-icon{ width:42px; height:42px; border-radius:12px; background:var(--blue); display:flex; align-items:center; justify-content:center; flex-shrink:0; box-shadow:0 8px 16px -8px rgba(47,111,224,.5); }
+  .hero-stat:nth-child(2n) .s-icon{ background:var(--violet); box-shadow:0 8px 16px -8px rgba(107,63,217,.5); }
+  .hero-stat .s-icon svg{ width:20px; height:20px; color:#fff; stroke-width:2.3; }
+  .hero-stat .n{ font-family:'Outfit',sans-serif; font-weight:800; font-size:1.25rem; line-height:1.1; }
+  .hero-stat .l{ font-size:.78rem; color:var(--ink-soft); }
 
   /* Sections communes */
   section{ padding:64px 0; }
