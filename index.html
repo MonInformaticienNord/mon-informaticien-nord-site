@@ -7,301 +7,421 @@
 <meta name="description" content="Dépannage informatique, audit de parc, création de sites et vente de matériel dans la métropole lilloise. Intervention rapide, devis gratuit.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="/css/site-v2.css?v=2">
 </head>
-<body>
-<header class="site">
-  <div class="wrap row">
-    <a class="brand" href="/index.html">
-      <img class="brand-logo" src="/images/logo.png" alt="Mon Informaticien Nord">
-      <span class="word">Mon Informaticien Nord<small>Métropole lilloise</small></span>
+<body class="v2">
+
+<header class="v2-header">
+  <div class="wrap-v2 v2-header-inner">
+    <a href="/index.html" class="v2-brand">
+      <img src="/images/logo-mark.png" alt="Mon Informaticien Nord">
+      <span class="v2-brand-word"><b>MON INFORMATICIEN</b><span>NORD</span></span>
     </a>
-    <nav class="main" aria-label="Navigation principale" style="position:relative;">
-      <ul id="mainNavList">
-        <li><a href="/index.html">Accueil</a></li>
-        <li class="has-dropdown">
-          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-            Services
-            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="/depannage-particuliers.html">Dépannage particuliers</a></li>
-            <li><a href="/depannage-professionnels.html">Dépannage professionnels</a></li>
-            <li><a href="/audit-parc-informatique.html">Audit de parc informatique</a></li>
-            <li><a href="/creation-site-internet.html">Création de sites internet</a></li>
-            <li><a href="/materiel-informatique.html">Vente de matériel</a></li>
-            <li><a href="/assistance-ia.html">Assistance IA <span class="badge-soon">bientôt</span></a></li>
-            <li><a href="/formation-informatique.html">Formation informatique</a></li>
-            <li><a href="/sauvegarde-cloud.html">Sauvegarde cloud</a></li>
-          </ul>
-        </li>
-        <li><a href="/tarifs.html">Tarifs</a></li>
-        <li><a href="/zone-intervention.html">Zone d'intervention</a></li>
-        <li><a href="/a-propos.html">À propos</a></li>
-      </ul>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="mainNavList">Menu</button>
+    <nav class="v2-nav" aria-label="Navigation principale">
+      <a href="#services">Services</a>
+      <a href="#methode">Méthode</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#zone">Zone</a>
+      <a href="#faq">FAQ</a>
+      <a href="/a-propos.html">À propos</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="tel-btn" href="tel:0760266332">07 60 26 63 32</a>
+    <div class="v2-header-actions">
+      <a href="tel:0760266332" class="v2-tel-btn"><i class="ph ph-phone-call"></i><span class="txt">07 60 26 63 32</span></a>
+      <a href="#contact" class="v2-cta"><i class="ph ph-calendar-check"></i>Demander un rappel</a>
+      <button type="button" class="v2-menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu"><i class="ph ph-list"></i></button>
+    </div>
   </div>
 </header>
 
 <main>
-  <section class="hero">
-    <div class="wrap hero-grid">
+  <section id="top" class="v2-hero">
+    <div class="v2-hero-bg"></div>
+    <div class="wrap-v2 v2-hero-grid">
       <div>
-        <span class="eyebrow">Mon Informaticien Nord</span>
-        <h1>Votre informaticien de confiance dans la métropole lilloise</h1>
-        <p class="lede">Dépannage, audit, création de site, formation, sauvegarde : une équipe locale et réactive pour les particuliers et les professionnels, avec un devis clair avant chaque intervention.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="tel:0760266332">Appeler maintenant</a>
-          <a class="btn btn-dark" href="/contact.php">Demander un devis</a>
+        <div class="v2-badge">
+          <span class="dot"><span></span></span>
+          Hem 59510 · Interventions dans toute la métropole lilloise
         </div>
-        <div class="chip-row">
-          <span class="chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10 10 4l7 6M5 9v7h10V9"/></svg>Intervention à domicile</span>
-          <span class="chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/></svg>Réponse sous 24h</span>
-          <span class="chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l7-4 7 4v6l-7 4-7-4V7z"/></svg>Particuliers &amp; TPE</span>
+        <h1>Votre informatique<br>ne doit plus jamais<br><span class="grad">vous coûter une journée.</span></h1>
+        <p class="lede">Infogérance, sécurité et dépannage pour les entreprises et les particuliers du Nord. Un interlocuteur unique, joignable, qui règle le problème avant qu'il ne vous arrête.</p>
+        <div class="v2-hero-ctas">
+          <a href="#contact" class="v2-btn-primary">Demander un diagnostic gratuit <i class="ph ph-arrow-right"></i></a>
+          <a href="tel:0760266332" class="v2-btn-ghost"><i class="ph ph-phone-call"></i> M'appeler maintenant</a>
         </div>
+        <ul class="v2-hero-facts">
+          <li><i class="ph-fill ph-lightning"></i>Réponse sous 24h</li>
+          <li><i class="ph-fill ph-map-pin"></i>Technicien local</li>
+          <li><i class="ph-fill ph-seal-check"></i>Sans engagement</li>
+          <li><i class="ph-fill ph-star star"></i>4,9/5 sur Google</li>
+        </ul>
       </div>
-      <div class="hero-visual">
-        <!-- Friendly, sober line illustration: technician at a desk fixing a laptop.
-             Approachable like pc-clinic59's mascot energy, but line-art in brand
-             colors rather than a glossy cartoon character — stays grounded. -->
-        <svg class="hero-illustration" viewBox="0 0 320 170" fill="none" width="100%" height="auto" aria-hidden="true">
-          <rect x="0" y="0" width="320" height="170" rx="20" fill="#EFF4FE"/>
-          <rect x="40" y="112" width="240" height="8" rx="4" fill="#DDE6FB"/>
-          <rect x="66" y="60" width="120" height="70" rx="8" fill="#fff" stroke="#2F6FE0" stroke-width="3"/>
-          <rect x="78" y="72" width="96" height="46" rx="3" fill="#EAF1FD"/>
-          <path d="M96 96l14 14 26-30" stroke="#2F6FE0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="238" cy="70" r="26" fill="#fff" stroke="#6B3FD9" stroke-width="3"/>
-          <path d="M228 70a10 10 0 0 1 10-10" stroke="#6B3FD9" stroke-width="3" stroke-linecap="round"/>
-          <circle cx="238" cy="70" r="4" fill="#6B3FD9"/>
-          <rect x="206" y="118" width="64" height="10" rx="5" fill="#6B3FD9" opacity=".18"/>
-          <path d="M20 40h30M20 30h44M244 24h40M256 34h28" stroke="#B9C7EE" stroke-width="3" stroke-linecap="round"/>
-        </svg>
-        <div class="hero-stats-card">
-          <div class="rating-row">
+
+      <div class="v2-hero-visual">
+        <div class="v2-card">
+          <div class="v2-card-head">
             <span class="stars">★★★★★</span>
-            <div><strong>4,9/5</strong><br><span>310 avis Google &amp; AlloVoisins</span></div>
+            <div><strong>4,9/5</strong><span class="sub">310 avis Google &amp; AlloVoisins</span></div>
           </div>
-          <div class="hero-stat-grid">
-            <div class="hero-stat">
-              <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
-              <div><div class="n">10</div><div class="l">villes desservies</div></div>
-            </div>
-            <div class="hero-stat">
-              <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-              <div><div class="n">24h</div><div class="l">délai de réponse</div></div>
-            </div>
-            <div class="hero-stat">
-              <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
-              <div><div class="n">8</div><div class="l">services proposés</div></div>
-            </div>
-            <div class="hero-stat">
-              <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4z"/><path d="m9 12 2 2 4-4"/></svg></div>
-              <div><div class="n">Gratuit</div><div class="l">diagnostic &amp; devis</div></div>
-            </div>
+          <div class="v2-stat-grid">
+            <div class="v2-stat"><i class="ph ph-map-pin-line"></i><div><div class="n">10</div><div class="l">villes desservies</div></div></div>
+            <div class="v2-stat"><i class="ph ph-clock-countdown"></i><div><div class="n">24h</div><div class="l">délai de réponse</div></div></div>
+            <div class="v2-stat"><i class="ph ph-squares-four"></i><div><div class="n">8</div><div class="l">services proposés</div></div></div>
+            <div class="v2-stat"><i class="ph-fill ph-shield-check"></i><div><div class="n">Gratuit</div><div class="l">diagnostic &amp; devis</div></div></div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Nos services</span>
-        <h2>De quoi avez-vous besoin ?</h2>
-        <p>Huit services pour les particuliers et les professionnels, avec un tarif de départ clair pour chacun.</p>
-      </div>
-
-      <h3 class="cat-heading">Dépannage &amp; audit</h3>
-      <div class="svc-grid">
-        <a class="svc-card featured" href="/depannage-particuliers.html">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
-          <h3>Dépannage particuliers</h3>
-          <p>Virus, lenteur, imprimante en panne : intervention à domicile ou à distance.</p>
-          <span class="price">Dès 35€</span>
-        </a>
-        <a class="svc-card" href="/depannage-professionnels.html">
-          <div class="svc-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
-          <h3>Dépannage professionnels</h3>
-          <p>Support réactif pour TPE/PME, sur site ou à distance.</p>
-          <span class="price">Dès 49€/mois</span>
-        </a>
-        <a class="svc-card" href="/audit-parc-informatique.html">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
-          <h3>Audit de parc informatique</h3>
-          <p>État des lieux complet et plan d'action priorisé.</p>
-          <span class="price">Dès 90€</span>
-        </a>
-      </div>
-
-      <h3 class="cat-heading">Équipement &amp; sauvegarde</h3>
-      <div class="svc-grid">
-        <a class="svc-card" href="/materiel-informatique.html">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19l1-7h10l1 7M9 12V5h6v7"/></svg></div>
-          <h3>Vente de matériel</h3>
-          <p>Neuf ou reconditionné, installé et configuré chez vous.</p>
-          <span class="price">Sur devis</span>
-        </a>
-        <a class="svc-card" href="/sauvegarde-cloud.html">
-          <div class="svc-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-1-7.9A5 5 0 0 1 15.9 8 4.5 4.5 0 0 1 17 17H7z"/></svg></div>
-          <h3>Sauvegarde cloud</h3>
-          <p>Protégez vos photos, documents et données contre la perte.</p>
-          <span class="price">Dès 45€</span>
-        </a>
-      </div>
-
-      <h3 class="cat-heading">Digital &amp; formation</h3>
-      <div class="svc-grid">
-        <a class="svc-card" href="/creation-site-internet.html">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></div>
-          <h3>Création de site internet</h3>
-          <p>Sites rapides, responsives et optimisés pour Google.</p>
-          <span class="price">Dès 350€</span>
-        </a>
-        <a class="svc-card" href="/formation-informatique.html">
-          <div class="svc-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div>
-          <h3>Formation informatique</h3>
-          <p>Bureautique, sécurité numérique, à votre rythme.</p>
-          <span class="price">Dès 35€/h</span>
-        </a>
-        <a class="svc-card" href="/assistance-ia.html">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></div>
-          <h3>Assistance IA <span style="font-weight:500;color:var(--ink-soft);font-size:.8em;">(bientôt)</span></h3>
-          <p>Un accompagnement pour intégrer l'IA à votre quotidien.</p>
-          <span class="price">Bientôt</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="trust">
-    <div class="wrap">
-      <div class="trust-grid">
-        <div class="trust-item"><div class="num">310</div><div class="lbl">avis cumulés</div></div>
-        <div class="trust-item"><div class="num">4,9/5</div><div class="lbl">note moyenne</div></div>
-        <div class="trust-item"><div class="num">10</div><div class="lbl">villes desservies</div></div>
-        <div class="trust-item"><div class="num">24h</div><div class="lbl">délai de réponse</div></div>
-      </div>
-      <div class="section-head">
-        <span class="eyebrow">Avis clients</span>
-        <h2>Ce qu'ils en disent</h2>
-      </div>
-      <div class="review-grid">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>« Valentin est non seulement un informaticien hors pair, il est profondément honnête, sympa et trouve une solution à chaque problème ! »</p>
-          <cite>Jacqueline R.</cite>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>« Expert dans son domaine et dans la communication. Une personne ressource que je recommande vivement. »</p>
-          <cite>Florence D.</cite>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>« Je suis ravie de la prestation de Valentin. Sympathique et investi dans sa mission, je le recommande. »</p>
-          <cite>Isabelle W.</cite>
+        <div class="v2-floating">
+          <i class="ph-fill ph-clock-countdown"></i>
+          <div><div class="t1">Réponse sous 24h ouvrées</div><div class="t2">Du lundi au vendredi</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="wrap about">
-      <div class="about-panel">
-        <div class="avatar">V</div>
+  <section class="v2-strip">
+    <div class="wrap-v2 v2-strip-inner">
+      <div class="v2-strip-item"><i class="ph ph-plugs-connected"></i><div><div class="t">Un interlocuteur unique</div><div class="d">Pas de hotline, pas de ticket perdu</div></div></div>
+      <div class="v2-strip-item"><i class="ph ph-translate"></i><div><div class="t">Zéro jargon</div><div class="d">J'explique, vous décidez</div></div></div>
+      <div class="v2-strip-item"><i class="ph ph-receipt"></i><div><div class="t">Tarifs annoncés</div><div class="d">Devis clair, aucune surprise</div></div></div>
+      <div class="v2-strip-item"><i class="ph ph-house-line"></i><div><div class="t">Présence locale</div><div class="d">Basé à Hem, métropole lilloise</div></div></div>
+    </div>
+  </section>
+
+  <section id="services" class="v2-services">
+    <div class="wrap-v2">
+      <div class="v2-services-head">
+        <div style="max-width:620px">
+          <div class="v2-eyebrow">Mes services</div>
+          <h2 class="v2-h2">Tout votre informatique,<br>confiée à un seul interlocuteur.</h2>
+          <p class="v2-section-sub">Du poste de travail au serveur, de la box Wi-Fi au cloud. Choisissez votre profil.</p>
+        </div>
+        <div class="v2-tabs">
+          <button type="button" id="tab-pro" class="v2-tab active">Entreprises</button>
+          <button type="button" id="tab-part" class="v2-tab">Particuliers</button>
+        </div>
+      </div>
+
+      <div id="services-pro" class="v2-svc-grid">
+        <a href="/depannage-professionnels.html" class="v2-svc-card"><i class="ph ph-monitor-play"></i><div class="t">Infogérance complète</div><div class="d">Votre parc supervisé, mis à jour et dépanné en illimité pour un forfait mensuel connu d'avance.</div></a>
+        <a href="/depannage-professionnels.html" class="v2-svc-card"><i class="ph ph-headset"></i><div class="t">Support à distance</div><div class="d">Prise en main rapide. La majorité des incidents sont réglés sans déplacement, le jour même.</div></a>
+        <a href="/depannage-professionnels.html" class="v2-svc-card"><i class="ph ph-shield-check"></i><div class="t">Cybersécurité</div><div class="d">Antivirus managé, filtrage des mails, sensibilisation des équipes pour réduire fortement les risques.</div></a>
+        <a href="/sauvegarde-cloud.html" class="v2-svc-card"><i class="ph ph-database"></i><div class="t">Sauvegarde &amp; PRA</div><div class="d">Sauvegardes chiffrées externalisées, avec contrôle régulier. Reprise d'activité organisée après sinistre.</div></a>
+        <a href="/sauvegarde-cloud.html" class="v2-svc-card"><i class="ph ph-cloud"></i><div class="t">Microsoft 365 &amp; cloud</div><div class="d">Migration, licences, boîtes mail, partage de fichiers. Vos outils accessibles partout, en sécurité.</div></a>
+        <a href="/depannage-professionnels.html" class="v2-svc-card"><i class="ph ph-wifi-high"></i><div class="t">Réseau &amp; Wi-Fi pro</div><div class="d">Câblage, switchs, bornes, VPN. Une couverture stable jusqu'au fond de l'atelier.</div></a>
+        <a href="/depannage-professionnels.html" class="v2-svc-card"><i class="ph ph-phone-outgoing"></i><div class="t">Téléphonie VoIP</div><div class="d">Standard moderne, numéros conservés, appels depuis le mobile. Souvent moins cher que votre ligne actuelle.</div></a>
+        <a href="/audit-parc-informatique.html" class="v2-svc-card"><i class="ph ph-compass-tool"></i><div class="t">Audit &amp; conseil SI</div><div class="d">État des lieux, feuille de route à 12 mois, arbitrage des budgets. Sans vendre de matériel inutile.</div></a>
+        <a href="/materiel-informatique.html" class="v2-svc-card"><i class="ph ph-desktop-tower"></i><div class="t">Matériel &amp; installation</div><div class="d">Postes, serveurs, NAS : sélectionnés, configurés, livrés prêts à l'emploi.</div></a>
+        <a href="/creation-site-internet.html" class="v2-svc-card"><i class="ph ph-globe-hemisphere-west"></i><div class="t">Site web &amp; digital</div><div class="d">Site vitrine, e-mails pro, référencement local. Une présence à la hauteur de votre entreprise.</div></a>
+        <a href="/assistance-ia.html" class="v2-svc-card"><i class="ph ph-sparkle"></i><div class="t">Assistance IA <span style="font-weight:400;color:var(--faint);font-size:.85em;">(bientôt)</span></div><div class="d">Un accompagnement pour intégrer l'IA à votre quotidien professionnel.</div></a>
+      </div>
+
+      <div id="services-part" class="v2-svc-grid" hidden>
+        <a href="/depannage-particuliers.html" class="v2-svc-card"><i class="ph ph-house-line"></i><div class="t">Dépannage à domicile</div><div class="d">Je me déplace chez vous dans la métropole, du lundi au vendredi, sur rendez-vous rapide.</div></a>
+        <a href="/depannage-particuliers.html" class="v2-svc-card"><i class="ph ph-virus"></i><div class="t">Virus &amp; lenteurs</div><div class="d">Nettoyage complet, ordinateur qui redémarre vite. Diagnostic offert avant tout devis.</div></a>
+        <a href="/depannage-particuliers.html" class="v2-svc-card"><i class="ph ph-hard-drives"></i><div class="t">Récupération de données</div><div class="d">Photos, documents, disque qui ne démarre plus : je tente tout avant de conclure.</div></a>
+        <a href="/depannage-particuliers.html" class="v2-svc-card"><i class="ph ph-headset"></i><div class="t">Assistance à distance</div><div class="d">Une question, un réglage, une imprimante récalcitrante : réglé en quelques minutes.</div></a>
+        <a href="/depannage-particuliers.html" class="v2-svc-card"><i class="ph ph-wifi-high"></i><div class="t">Internet &amp; Wi-Fi</div><div class="d">Box, répéteurs, objets connectés : une maison enfin couverte partout.</div></a>
+        <a href="/materiel-informatique.html" class="v2-svc-card"><i class="ph ph-shopping-bag-open"></i><div class="t">Achat &amp; configuration</div><div class="d">Je vous conseille le bon matériel, au bon prix, et je transfère tout depuis l'ancien.</div></a>
+        <a href="/formation-informatique.html" class="v2-svc-card"><i class="ph ph-chalkboard-teacher"></i><div class="t">Formation informatique</div><div class="d">Bureautique et sécurité numérique, à votre rythme, chez vous ou à distance.</div></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="methode" class="v2-methode">
+    <div class="wrap-v2">
+      <div class="v2-eyebrow">Ma méthode</div>
+      <h2 class="v2-h2" style="max-width:640px">Quatre étapes, et vous n'y pensez plus.</h2>
+      <div class="v2-methode-grid">
+        <div class="v2-step is-first">
+          <div class="num">01</div>
+          <div class="t">Diagnostic gratuit</div>
+          <p>Sur place ou à distance, selon votre disponibilité. Je dresse l'état réel de votre parc, de vos sauvegardes et de vos risques.</p>
+        </div>
+        <div class="v2-step">
+          <div class="num">02</div>
+          <div class="t">Plan chiffré</div>
+          <p>Un document lisible : ce qui est urgent, ce qui peut attendre, ce que ça coûte. Sans engagement.</p>
+        </div>
+        <div class="v2-step">
+          <div class="num">03</div>
+          <div class="t">Mise en sécurité</div>
+          <p>Sauvegardes, mises à jour, antivirus, accès. Le tout déployé hors de vos heures de production.</p>
+        </div>
+        <div class="v2-step">
+          <div class="num">04</div>
+          <div class="t">Supervision continue</div>
+          <p>Je détecte la panne avant vous. Un numéro direct quand vous en avez besoin, et un point régulier sur l'état de votre parc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="v2-band">
+    <div class="wrap-v2 v2-band-inner">
+      <div class="v2-band-item"><div class="n">310</div><div class="l">avis cumulés<br>sur Google &amp; AlloVoisins</div></div>
+      <div class="v2-band-item"><div class="n">4,9/5</div><div class="l">note moyenne<br>de mes clients</div></div>
+      <div class="v2-band-item"><div class="n">10</div><div class="l">villes desservies<br>dans la métropole lilloise</div></div>
+      <div class="v2-band-item"><div class="n">24h</div><div class="l">délai de réponse,<br>du lundi au vendredi</div></div>
+    </div>
+  </section>
+
+  <section id="tarifs" class="v2-tarifs">
+    <div class="wrap-v2">
+      <div class="v2-eyebrow">Formules</div>
+      <h2 class="v2-h2">Un budget connu d'avance.</h2>
+      <p class="v2-section-sub" style="margin-bottom:38px;max-width:560px">Interventions ponctuelles ou infogérance mensuelle, résiliable à tout moment. Tarifs indicatifs HT, ajustés après devis.</p>
+      <div class="v2-price-grid">
+        <div class="v2-price-card">
+          <div class="v2-price-kicker">Ponctuel</div>
+          <div class="v2-price-value"><span class="amount">79 €</span><span class="per">/ heure</span></div>
+          <p class="desc">Un problème, une intervention. Pour les particuliers et les très petites structures.</p>
+          <div class="v2-price-list">
+            <div><i class="ph ph-check"></i>Dépannage à distance ou sur site</div>
+            <div><i class="ph ph-check"></i>Diagnostic offert avant devis</div>
+            <div><i class="ph ph-check"></i>Déplacement inclus dans la métropole</div>
+          </div>
+          <a href="#contact" class="v2-price-cta">Décrire mon problème</a>
+        </div>
+        <div class="v2-price-card featured">
+          <div class="v2-price-badge">Le plus choisi</div>
+          <div class="v2-price-kicker">Sérénité — infogérance</div>
+          <div class="v2-price-value"><span class="amount">39 €</span><span class="per">/ poste / mois</span></div>
+          <p class="desc">Votre parc supervisé, sécurisé et dépanné en illimité. La formule des PME de 5 à 50 postes.</p>
+          <div class="v2-price-list">
+            <div><i class="ph ph-check"></i>Support illimité, réponse sous 24h</div>
+            <div><i class="ph ph-check"></i>Antivirus, mises à jour et supervision continue</div>
+            <div><i class="ph ph-check"></i>Sauvegarde externalisée chiffrée</div>
+            <div><i class="ph ph-check"></i>Rapport mensuel et point trimestriel</div>
+          </div>
+          <a href="#contact" class="v2-price-cta primary">Obtenir mon devis gratuit</a>
+        </div>
+        <div class="v2-price-card">
+          <div class="v2-price-kicker">Projet</div>
+          <div class="v2-price-value"><span class="amount">Sur devis</span></div>
+          <p class="desc">Migration, refonte réseau, ouverture de site, mise en conformité. Cadré, planifié, livré.</p>
+          <div class="v2-price-list">
+            <div><i class="ph ph-check"></i>Un seul interlocuteur, du début à la fin</div>
+            <div><i class="ph ph-check"></i>Prix ferme, planning engagé</div>
+            <div><i class="ph ph-check"></i>Bascule hors heures ouvrées</div>
+          </div>
+          <a href="#contact" class="v2-price-cta">Parler de mon projet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="v2-reviews">
+    <div class="wrap-v2">
+      <div class="v2-reviews-head">
+        <h2>Ce qu'en disent mes clients</h2>
+        <div class="v2-rating-chip">
+          <span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+          <span class="txt">4,9/5 · 310 avis (Google &amp; AlloVoisins)</span>
+        </div>
+      </div>
+      <div class="v2-review-grid">
+        <figure class="v2-review-card">
+          <i class="ph-fill ph-quotes quote"></i>
+          <blockquote>« Valentin est non seulement un informaticien hors pair, il est profondément honnête, sympa et trouve une solution à chaque problème ! »</blockquote>
+          <figcaption>Jacqueline R.</figcaption>
+        </figure>
+        <figure class="v2-review-card">
+          <i class="ph-fill ph-quotes quote"></i>
+          <blockquote>« Expert dans son domaine et dans la communication. Une personne ressource que je recommande vivement. »</blockquote>
+          <figcaption>Florence D.</figcaption>
+        </figure>
+        <figure class="v2-review-card">
+          <i class="ph-fill ph-quotes quote"></i>
+          <blockquote>« Je suis ravie de la prestation de Valentin. Sympathique et investi dans sa mission, je le recommande. »</blockquote>
+          <figcaption>Isabelle W.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="zone" class="v2-zone">
+    <div class="wrap-v2">
+      <div class="v2-zone-box">
         <div>
-          <strong>Valentin</strong><br>
-          <span>Fondateur — Hem (59)</span>
+          <div class="v2-eyebrow">Zone d'intervention</div>
+          <h2>Basé à Hem,<br>présent partout autour.</h2>
+          <p>J'interviens sur site dans la métropole lilloise, et à distance partout en France.</p>
+          <div class="v2-zone-tags">
+            <span class="home">Hem</span>
+            <span>Lille</span>
+            <span>Roubaix</span>
+            <span>Tourcoing</span>
+            <span>Villeneuve-d'Ascq</span>
+            <span>Marcq-en-Barœul</span>
+            <span>Wattrelos</span>
+            <span>Mons-en-Barœul</span>
+            <span>Wasquehal</span>
+            <span>Croix</span>
+            <span>Lambersart</span>
+          </div>
+          <a href="/zone-intervention.html" class="v2-zone-link">Voir toutes les villes desservies <i class="ph ph-arrow-right"></i></a>
         </div>
-        <div class="stat-row">
-          <div><div class="n">310</div><div class="l">avis</div></div>
-          <div><div class="n">4,9/5</div><div class="l">note</div></div>
+        <div class="v2-zone-map">
+          <div class="v2-zone-ring r1"></div>
+          <div class="v2-zone-ring r2"></div>
+          <div class="v2-zone-ring r3"></div>
+          <div class="v2-zone-ring r4"></div>
+          <div class="v2-zone-center"><i class="ph-fill ph-map-pin"></i><span>Hem 59510</span></div>
+          <span class="v2-zone-label" style="top:14%;left:16%">Tourcoing</span>
+          <span class="v2-zone-label" style="top:30%;right:12%">Roubaix</span>
+          <span class="v2-zone-label" style="bottom:20%;left:10%">Lille</span>
+          <span class="v2-zone-label" style="bottom:11%;right:18%">Villeneuve-d'Ascq</span>
+          <span class="v2-zone-label" style="top:50%;left:6%">Marcq</span>
         </div>
-      </div>
-      <div class="about-text">
-        <span class="eyebrow">À propos</span>
-        <h2>Un seul interlocuteur, du premier appel à la réparation</h2>
-        <p><strong>Je m'appelle Valentin</strong>, auto-entrepreneur basé à Hem. Pas d'équipe commerciale, pas d'intermédiaire : la personne qui répond au téléphone est celle qui intervient chez vous.</p>
-        <p>Ce qui compte le plus pour moi, ce ne sont pas les machines : ce sont les gens derrière. J'aime prendre le temps d'expliquer plutôt que d'enchaîner les rendez-vous.</p>
-        <a class="btn btn-outline" href="/a-propos.html">En savoir plus</a>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="wrap">
-      <div class="cta-final">
-        <h2>Une panne, une question ?</h2>
-        <p>Diagnostic gratuit, réponse rapide, dans toute la métropole lilloise.</p>
-        <a class="btn btn-primary" href="/contact.php">Nous contacter</a>
+  <section id="faq" class="v2-faq">
+    <div class="wrap-v2 v2-faq-grid">
+      <div class="v2-faq-intro">
+        <div class="v2-eyebrow">Questions fréquentes</div>
+        <h2>Ce qu'on me<br>demande le plus.</h2>
+        <p>Une autre question ? Appelez-moi, je réponds en direct.</p>
+        <a href="tel:0760266332" class="v2-btn-ghost"><i class="ph ph-phone-call"></i>07 60 26 63 32</a>
+      </div>
+      <div class="v2-faq-list">
+        <div class="v2-faq-item">
+          <button type="button" class="v2-faq-q" aria-expanded="false"><span>Intervenez-vous chez les particuliers comme chez les professionnels ?</span><i class="ph ph-plus"></i></button>
+          <div class="v2-faq-a"><p>Oui, les deux. Les entreprises passent en général par un contrat d'infogérance mensuel ; les particuliers sont facturés à l'heure, avec un diagnostic offert et un prix annoncé avant toute intervention.</p></div>
+        </div>
+        <div class="v2-faq-item">
+          <button type="button" class="v2-faq-q" aria-expanded="false"><span>Quel est votre délai d'intervention ?</span><i class="ph ph-plus"></i></button>
+          <div class="v2-faq-a"><p>Je vous rappelle sous 24 heures. La prise en main à distance est rapide, et j'interviens sur site dans la métropole lilloise selon l'urgence de la panne.</p></div>
+        </div>
+        <div class="v2-faq-item">
+          <button type="button" class="v2-faq-q" aria-expanded="false"><span>Faut-il s'engager sur la durée ?</span><i class="ph ph-plus"></i></button>
+          <div class="v2-faq-a"><p>Non. Mes contrats d'infogérance sont mensuels et résiliables à tout moment avec un préavis d'un mois. Je préfère vous garder par la qualité du service.</p></div>
+        </div>
+        <div class="v2-faq-item">
+          <button type="button" class="v2-faq-q" aria-expanded="false"><span>Que se passe-t-il si vous ne réparez pas ?</span><i class="ph ph-plus"></i></button>
+          <div class="v2-faq-a"><p>Le diagnostic est offert. Si je ne parviens pas à résoudre le problème, vous ne payez pas l'intervention — et je vous oriente vers la bonne solution.</p></div>
+        </div>
+        <div class="v2-faq-item">
+          <button type="button" class="v2-faq-q" aria-expanded="false"><span>Travaillez-vous avec notre prestataire ou notre éditeur actuel ?</span><i class="ph ph-plus"></i></button>
+          <div class="v2-faq-a"><p>Oui. Je reprends les environnements existants et dialogue directement avec vos éditeurs métier, votre opérateur et votre expert-comptable si besoin.</p></div>
+        </div>
+        <div class="v2-faq-item">
+          <button type="button" class="v2-faq-q" aria-expanded="false"><span>Comment sécurisez-vous nos données ?</span><i class="ph ph-plus"></i></button>
+          <div class="v2-faq-a"><p>Sauvegardes chiffrées externalisées et testées, authentification renforcée, antivirus managé et filtrage des mails. Les accès sont nominatifs et tracés.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="v2-contact">
+    <div class="v2-contact-bg"></div>
+    <div class="wrap-v2 v2-contact-grid">
+      <div>
+        <div class="v2-eyebrow">Contact</div>
+        <h2>Parlons de votre<br>informatique. C'est gratuit.</h2>
+        <div class="v2-contact-intro"><p>Un diagnostic clair, un plan chiffré, aucune obligation. Vous saurez exactement où vous en êtes.</p></div>
+        <div class="v2-contact-cards">
+          <a href="tel:0760266332" class="v2-contact-card">
+            <i class="ph-fill ph-phone-call"></i>
+            <div><div class="t1">07 60 26 63 32</div><div class="t2">Lun – Ven, 9h – 19h</div></div>
+          </a>
+          <div class="v2-contact-card">
+            <i class="ph-fill ph-map-pin"></i>
+            <div><div class="t1">Hem, 59510</div><div class="t2">Interventions dans toute la métropole lilloise</div></div>
+          </div>
+          <div class="v2-contact-card">
+            <i class="ph-fill ph-lightning"></i>
+            <div><div class="t1">Urgence bloquante ?</div><div class="t2">Appelez directement, je fais au mieux pour vous aider vite</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="v2-form-card">
+        <div id="v2-form-sent" class="v2-sent" style="display:none">
+          <i class="ph-fill ph-check-circle"></i>
+          <div class="t">Demande envoyée.</div>
+          <p>Je vous rappelle sous 24 heures. En cas d'urgence, appelez le 07 60 26 63 32.</p>
+        </div>
+        <div id="v2-form-notsent">
+          <h3>Demander un rappel</h3>
+          <p class="hint">Réponse sous 24 heures.</p>
+          <p id="v2-form-error" class="v2-form-error" style="display:none"></p>
+          <form id="v2-contact-form" method="POST" action="/contact.php">
+            <div class="v2-form-row">
+              <label class="v2-field"><span>Nom</span><input type="text" name="name" placeholder="Votre nom" required></label>
+              <label class="v2-field"><span>Société <span class="opt">(optionnel)</span></span><input type="text" name="company" placeholder="Nom de société"></label>
+            </div>
+            <div class="v2-form-row">
+              <label class="v2-field"><span>Téléphone</span><input type="tel" name="phone" placeholder="06 00 00 00 00"></label>
+              <label class="v2-field"><span>E-mail</span><input type="email" name="email" placeholder="vous@exemple.fr" required></label>
+            </div>
+            <div class="v2-field">
+              <span>Votre besoin</span>
+              <div class="v2-needs">
+                <button type="button" class="v2-need-btn active">Infogérance</button>
+                <button type="button" class="v2-need-btn">Dépannage urgent</button>
+                <button type="button" class="v2-need-btn">Cybersécurité</button>
+                <button type="button" class="v2-need-btn">Projet / migration</button>
+                <button type="button" class="v2-need-btn">Particulier</button>
+              </div>
+              <input type="hidden" name="need" id="v2-need-value" value="Infogérance">
+            </div>
+            <label class="v2-field"><span>Détails</span><textarea rows="3" name="details" placeholder="Décrivez votre situation en deux lignes…" required></textarea></label>
+            <button type="submit" class="v2-submit">Être rappelé sous 24 h</button>
+            <div class="v2-form-note"><i class="ph ph-lock-simple"></i> Vos données restent chez moi. Aucun démarchage.</div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="site">
-  <div class="wrap footer-inner">
-    <div class="footer-col">
-      <span class="footer-logo-badge"><img src="/images/logo.png" alt="Mon Informaticien Nord" style="height:24px;display:block;"></span>
-      <h3>Mon Informaticien Nord</h3>
-      <p>Informaticien de proximité dans la métropole lilloise.</p>
+<footer class="v2-footer">
+  <div class="wrap-v2 v2-footer-grid">
+    <div>
+      <div class="v2-footer-brand">
+        <img src="/images/logo-mark.png" alt="">
+        <span class="word"><b>MON INFORMATICIEN</b><span>NORD</span></span>
+      </div>
+      <p class="tag">Votre informaticien de confiance dans la métropole lilloise. Entreprises et particuliers.</p>
     </div>
-    <div class="footer-col">
-      <h3>Zone d'intervention</h3>
-      <p>Lille, Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Wattrelos et alentours.</p>
-      <p><a href="/zone-intervention.html">Voir toutes les villes →</a></p>
+    <div>
+      <h4>Entreprises</h4>
+      <div class="v2-footer-links">
+        <a href="/depannage-professionnels.html">Infogérance &amp; dépannage pro</a>
+        <a href="/audit-parc-informatique.html">Audit de parc</a>
+        <a href="/sauvegarde-cloud.html">Sauvegarde &amp; cloud</a>
+        <a href="/creation-site-internet.html">Site internet</a>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>Contact</h3>
-      <p><a href="tel:0760266332">07 60 26 63 32</a></p>
-      <p><a href="/contact.php">Formulaire de contact</a></p>
+    <div>
+      <h4>Particuliers</h4>
+      <div class="v2-footer-links">
+        <a href="/depannage-particuliers.html">Dépannage à domicile</a>
+        <a href="/materiel-informatique.html">Vente de matériel</a>
+        <a href="/formation-informatique.html">Formation informatique</a>
+        <a href="/a-propos.html">À propos</a>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>Horaires</h3>
-      <ul class="hours-list">
-        <li><span>Lundi – Vendredi</span><span>9h – 19h</span></li>
-        <li><span>Samedi</span><span>Fermé</span></li>
-        <li><span>Dimanche</span><span>Fermé</span></li>
-      </ul>
+    <div>
+      <h4>Contact</h4>
+      <div class="v2-footer-links">
+        <a href="tel:0760266332">07 60 26 63 32</a>
+        <span>Hem, 59510</span>
+        <span>Lun – Ven, 9h – 19h</span>
+      </div>
     </div>
   </div>
-  <div class="footer-bottom">&copy; 2026 Mon Informaticien Nord — Hem (59) — 07 60 26 63 32</div>
+  <div class="v2-footer-bottom">
+    <span>© 2026 Mon Informaticien Nord — PC Solution</span>
+    <span>Mentions légales · Politique de confidentialité</span>
+  </div>
 </footer>
 
-<script>
-  var toggle = document.querySelector('.dropdown-toggle');
-  var dropdownParent = document.querySelector('.has-dropdown');
-  if(toggle){
-    toggle.addEventListener('click', function(e){
-      e.stopPropagation();
-      var open = dropdownParent.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    document.addEventListener('click', function(e){
-      if(!dropdownParent.contains(e.target)){
-        dropdownParent.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape'){
-        dropdownParent.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-  var navToggle = document.querySelector('.nav-toggle');
-  var navList = document.getElementById('mainNavList');
-  if(navToggle && navList){
-    navToggle.addEventListener('click', function(){
-      var open = navList.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  }
-</script>
+<script src="/js/site-v2.js"></script>
 </body>
 </html>

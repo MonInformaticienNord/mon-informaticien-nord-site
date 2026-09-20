@@ -1,16 +1,27 @@
 <?php
 $success = false;
 $error = false;
+$isAjax = isset($_POST['ajax']) || (($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '') === 'XMLHttpRequest');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = trim($_POST['name'] ?? '');
     $email = trim($_POST['email'] ?? '');
-    $message = trim($_POST['message'] ?? '');
+    $phone = trim($_POST['phone'] ?? '');
+    $company = trim($_POST['company'] ?? '');
+    $need = trim($_POST['need'] ?? '');
+    $message = trim($_POST['message'] ?? ($_POST['details'] ?? ''));
 
     if ($name !== '' && filter_var($email, FILTER_VALIDATE_EMAIL) && $message !== '') {
         $to = "support@moninformaticiennord.fr";
         $subject = "Nouveau message depuis le site - $name";
-        $body = "Nom : $name\nE-mail : $email\n\nMessage :\n$message";
+        $bodyLines = ["Nom : $name", "E-mail : $email"];
+        if ($phone !== '') $bodyLines[] = "Téléphone : $phone";
+        if ($company !== '') $bodyLines[] = "Société : $company";
+        if ($need !== '') $bodyLines[] = "Besoin : $need";
+        $bodyLines[] = "";
+        $bodyLines[] = "Message :";
+        $bodyLines[] = $message;
+        $body = implode("\n", $bodyLines);
         $headers = "From: no-reply@moninformaticiennord.fr\r\nReply-To: $email";
 
         if (mail($to, $subject, $body, $headers)) {
@@ -20,6 +31,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     } else {
         $error = true;
+    }
+
+    if ($isAjax) {
+        header('Content-Type: application/json');
+        echo json_encode(['success' => $success]);
+        exit;
     }
 }
 ?>
