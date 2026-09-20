@@ -381,8 +381,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <footer class="site">
   <div class="wrap row">
-    <span>Mon Informaticien Nord — Hem (59)</span>
-    <span>Refonte v4 — document de travail</span>
+    <span>&copy; 2026 Mon Informaticien Nord — Hem (59)</span>
+    <span>07 60 26 63 32</span>
   </div>
 </footer>
 
