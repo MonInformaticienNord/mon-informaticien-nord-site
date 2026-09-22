@@ -58,12 +58,12 @@ body.v2 {
 .v2-nav a:hover { color: var(--violet-strong); }
 
 .v2-header-actions { display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
-.v2-tel-btn {
+.v2 a.v2-tel-btn {
   display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; color: var(--ink);
   text-decoration: none; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--line);
 }
 .v2-tel-btn:hover { border-color: var(--violet); color: var(--violet-strong); }
-.v2-cta {
+.v2 a.v2-cta {
   display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 500;
   text-decoration: none; color: #fff; padding: 9px 16px; border-radius: 8px;
   background: var(--grad-brand); box-shadow: 0 6px 18px rgba(109, 59, 245, .28); border: 0; cursor: pointer;
@@ -91,13 +91,13 @@ body.v2 {
 .v2-hero h1 .grad { background: linear-gradient(96deg,#4338ca,#7c3aed 46%,#9333ea); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .v2-hero p.lede { font-size: 17px; line-height: 1.6; color: var(--muted); max-width: 520px; margin: 0 0 30px; }
 .v2-hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
-.v2-btn-primary {
+.v2 a.v2-btn-primary {
   display: inline-flex; align-items: center; gap: 9px; font-size: 15px; font-weight: 500; text-decoration: none;
   color: #fff; padding: 14px 24px; border-radius: 10px; background: var(--grad-brand);
   box-shadow: 0 10px 28px rgba(109,59,245,.30);
 }
 .v2-btn-primary:hover { filter: brightness(1.1); color: #fff; }
-.v2-btn-ghost {
+.v2 a.v2-btn-ghost {
   display: inline-flex; align-items: center; gap: 9px; font-size: 15px; font-weight: 500; text-decoration: none;
   color: var(--ink); padding: 14px 22px; border-radius: 10px; border: 1px solid color-mix(in srgb, #14122b 18%, transparent);
 }
@@ -354,7 +354,7 @@ a.v2-contact-card:hover { border-color: var(--violet); background: var(--violet-
 }
 @media (max-width: 760px) {
   .v2-nav { display: none; }
-  .v2-cta { display: none; }
+  .v2 a.v2-cta { display: none; }
   .v2-menu-toggle {
     display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px;
     border-radius: 8px; border: 1px solid var(--line); background: none; cursor: pointer; color: var(--ink);
