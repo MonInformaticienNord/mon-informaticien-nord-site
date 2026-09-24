@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-<link rel="stylesheet" href="/css/site-v2.css?v=8">
+<link rel="stylesheet" href="/css/site-v2.css?v=11">
 </head>
 <body class="v2">
 
@@ -249,22 +249,23 @@
           <div class="v2-eyebrow">Zone d'intervention</div>
           <h2>Basé à Hem,<br>présent partout autour.</h2>
           <p>J'interviens sur site dans la métropole lilloise, et à distance partout en France.</p>
-          <div class="v2-zone-tags">
-            <span class="home">Hem</span>
-            <span>Lille</span>
-            <span>Roubaix</span>
-            <span>Tourcoing</span>
-            <span>Villeneuve-d'Ascq</span>
-            <span>Marcq-en-Barœul</span>
-            <span>Wattrelos</span>
-            <span>Mons-en-Barœul</span>
-            <span>Wasquehal</span>
-            <span>Croix</span>
-            <span>Lambersart</span>
+          <div class="v2-zone-tags" id="zone-tags">
+            <span class="home" data-lat="50.6541" data-lng="3.1839">Hem</span>
+            <span data-lat="50.6366" data-lng="3.0635">Lille</span>
+            <span data-lat="50.6916" data-lng="3.1742">Roubaix</span>
+            <span data-lat="50.7235" data-lng="3.1606">Tourcoing</span>
+            <span data-lat="50.6193" data-lng="3.1314">Villeneuve-d'Ascq</span>
+            <span data-lat="50.6767" data-lng="3.1043">Marcq-en-Barœul</span>
+            <span data-lat="50.7016" data-lng="3.2154">Wattrelos</span>
+            <span data-lat="50.6429" data-lng="3.1094">Mons-en-Barœul</span>
+            <span data-lat="50.6692" data-lng="3.1312">Wasquehal</span>
+            <span data-lat="50.6802" data-lng="3.1564">Croix</span>
+            <span data-lat="50.6478" data-lng="3.0224">Lambersart</span>
           </div>
           <a href="#contact" class="v2-zone-link">Votre commune n'est pas listée ? Demandez-moi <i class="ph ph-arrow-right"></i></a>
         </div>
-        <div class="v2-zone-map">
+        <div class="v2-zone-map" id="zone-map" role="region" aria-label="Carte de la zone d'intervention">
+          <div class="v2-zone-static" aria-hidden="true">
           <div class="v2-zone-ring r1"></div>
           <div class="v2-zone-ring r2"></div>
           <div class="v2-zone-ring r3"></div>
@@ -275,6 +276,8 @@
           <span class="v2-zone-label" style="bottom:20%;left:10%">Lille</span>
           <span class="v2-zone-label" style="bottom:11%;right:18%">Villeneuve-d'Ascq</span>
           <span class="v2-zone-label" style="top:50%;left:6%">Marcq</span>
+          </div>
+          <div class="v2-zone-canvas" id="zone-map-canvas"></div>
         </div>
       </div>
     </div>
@@ -423,5 +426,6 @@
 </footer>
 
 <script src="/js/site-v2.js?v=3"></script>
+<script src="/js/zone-map.js?v=5" defer></script>
 </body>
 </html>
