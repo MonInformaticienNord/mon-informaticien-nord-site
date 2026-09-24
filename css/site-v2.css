@@ -172,6 +172,9 @@ a.v2-svc-card:hover, .v2-svc-card:hover { border-color: color-mix(in srgb, #7c3a
 .v2-svc-card i { font-size: 24px; color: var(--violet-strong); }
 .v2-svc-card .t { font-size: 16px; font-weight: 500; letter-spacing: -.01em; }
 .v2-svc-card .d { font-size: 13.5px; line-height: 1.55; color: var(--muted); }
+.v2-svc-card .go { margin-top: auto; padding-top: 8px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: var(--violet-dark); }
+.v2-svc-card .go i { font-size: 14px; color: inherit; transition: transform .18s ease; }
+.v2-svc-card:hover .go i { transform: translateX(3px); }
 
 /* Méthode */
 .v2-methode { padding: 84px 0; }
@@ -252,6 +255,7 @@ a.v2-svc-card:hover, .v2-svc-card:hover { border-color: color-mix(in srgb, #7c3a
 .v2-zone-tags span.home { border-color: color-mix(in srgb, #7c3aed 35%, transparent); color: var(--violet-dark); }
 .v2-zone-link { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; text-decoration: none; color: var(--violet-dark); }
 .v2-zone-link:hover { color: #4718c9; }
+.v2-tarifs-more { margin-top: 26px; }
 .v2-zone-map { position: relative; aspect-ratio: 1/.82; display: flex; align-items: center; justify-content: center; }
 .v2-zone-ring { position: absolute; border-radius: 50%; }
 .v2-zone-ring.r1 { width: 88%; aspect-ratio: 1; border: 1px dashed var(--line); }
@@ -352,9 +356,9 @@ a.v2-contact-card:hover { border-color: var(--violet); background: var(--violet-
   .v2-contact-grid { grid-template-columns: 1fr; }
   .v2-strip-inner { grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
-@media (max-width: 760px) {
+@media (max-width: 1040px) {
   .v2-nav { display: none; }
-  .v2 a.v2-cta { display: none; }
+  .v2-header-actions { margin-left: auto; }
   .v2-menu-toggle {
     display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px;
     border-radius: 8px; border: 1px solid var(--line); background: none; cursor: pointer; color: var(--ink);
@@ -365,6 +369,10 @@ a.v2-contact-card:hover { border-color: var(--violet); background: var(--violet-
     z-index: 60;
   }
   .v2-header-inner { position: relative; }
-  .v2-tel-btn span.txt { display: none; }
+  .v2-nav.open a { padding: 9px 0; font-size: 15px; }
   .v2-nav-mobile-only { display: block; }
+}
+@media (max-width: 760px) {
+  .v2 a.v2-cta { display: none; }
+  .v2-tel-btn span.txt { display: none; }
 }

@@ -29,6 +29,17 @@
   if (tabPro) tabPro.addEventListener("click", function () { showAudience("pro"); });
   if (tabPart) tabPart.addEventListener("click", function () { showAudience("part"); });
 
+  // Deep links (footer, redirected old pages): #entreprises / #particuliers pick the tab
+  function applyAudienceHash() {
+    var h = window.location.hash;
+    if (h !== "#entreprises" && h !== "#particuliers") return;
+    showAudience(h === "#particuliers" ? "part" : "pro");
+    var section = document.getElementById("services");
+    if (section) section.scrollIntoView();
+  }
+  applyAudienceHash();
+  window.addEventListener("hashchange", applyAudienceHash);
+
   // FAQ accordion
   var faqItems = document.querySelectorAll(".v2-faq-item");
   faqItems.forEach(function (item) {
@@ -101,6 +112,24 @@
         });
     });
   }
+
+  // Service cards: jump to the contact form with that service already filled in
+  var lastPrefill = "";
+  document.querySelectorAll(".v2-svc-card[data-service]").forEach(function (card) {
+    card.addEventListener("click", function () {
+      var need = card.getAttribute("data-need");
+      var service = card.getAttribute("data-service");
+      if (need) {
+        needButtons.forEach(function (b) { b.classList.toggle("active", b.textContent.trim() === need); });
+        if (needInput) needInput.value = need;
+      }
+      var details = form && form.querySelector('textarea[name="details"]');
+      if (details && (!details.value.trim() || details.value === lastPrefill)) {
+        lastPrefill = "Je souhaite être rappelé au sujet de : " + service + ".";
+        details.value = lastPrefill;
+      }
+    });
+  });
 
   function showSent() {
     var notSent = document.getElementById("v2-form-notsent");

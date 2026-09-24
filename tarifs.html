@@ -7,168 +7,140 @@
 <meta name="description" content="Diagnostic gratuit, dépannage à partir de 79€/h, installation Windows, récupération de données... Découvrez les tarifs de Mon Informaticien Nord dans la métropole lilloise.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="/css/site-v2.css?v=8">
+<link rel="stylesheet" href="/css/site-v2-pages.css?v=1">
 </head>
-<body>
-<header class="site">
-  <div class="wrap row">
-    <a class="brand" href="/index.html">
-      <img class="brand-logo" src="/images/logo.png" alt="Mon Informaticien Nord">
-      <span class="word">Mon Informaticien Nord<small>Métropole lilloise</small></span>
+<body class="v2">
+
+<header class="v2-header">
+  <div class="wrap-v2 v2-header-inner">
+    <a href="/index.html" class="v2-brand">
+      <img src="/images/logo-mark.png" alt="Mon Informaticien Nord">
+      <span class="v2-brand-word"><b>MON INFORMATICIEN</b><span>NORD</span></span>
     </a>
-    <nav class="main" aria-label="Navigation principale" style="position:relative;">
-      <ul id="mainNavList">
-        <li><a href="/index.html">Accueil</a></li>
-        <li class="has-dropdown">
-          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-            Services
-            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="/depannage-particuliers.html">Dépannage particuliers</a></li>
-            <li><a href="/depannage-professionnels.html">Dépannage professionnels</a></li>
-            <li><a href="/audit-parc-informatique.html">Audit de parc informatique</a></li>
-            <li><a href="/creation-site-internet.html">Création de sites internet</a></li>
-            <li><a href="/materiel-informatique.html">Vente de matériel</a></li>
-            <li><a href="/assistance-ia.html">Assistance IA <span class="badge-soon">bientôt</span></a></li>
-            <li><a href="/formation-informatique.html">Formation informatique</a></li>
-            <li><a href="/sauvegarde-cloud.html">Sauvegarde cloud</a></li>
-          </ul>
-        </li>
-        <li><a href="/tarifs.html" style="color:var(--blue);">Tarifs</a></li>
-        <li><a href="/zone-intervention.html">Zone d'intervention</a></li>
-        <li><a href="/a-propos.html">À propos</a></li>
-      </ul>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="mainNavList">Menu</button>
+    <nav class="v2-nav" aria-label="Navigation principale">
+      <a href="/index.html#services">Services</a>
+      <a href="/index.html#methode">Méthode</a>
+      <a href="/tarifs.html" aria-current="page">Tarifs</a>
+      <a href="/index.html#zone">Zone</a>
+      <a href="/index.html#faq">FAQ</a>
+      <a href="/a-propos.html">À propos</a>
+      <a href="/index.html#contact" class="v2-nav-mobile-only">Contact</a>
     </nav>
-    <a class="tel-btn" href="tel:0760266332">07 60 26 63 32</a>
+    <div class="v2-header-actions">
+      <a href="tel:0760266332" class="v2-tel-btn"><i class="ph ph-phone-call"></i><span class="txt">07 60 26 63 32</span></a>
+      <a href="/index.html#contact" class="v2-cta"><i class="ph ph-calendar-check"></i>Demander un rappel</a>
+      <button type="button" class="v2-menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu"><i class="ph ph-list"></i></button>
+    </div>
   </div>
 </header>
 
 <main>
-  <section class="page-hero">
-    <div class="wrap">
-      <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5.5c0-1.9-2.2-3.5-5-3.5s-5 1.6-5 3.5S9.2 9 12 9s5 1.6 5 3.5-2.2 3.5-5 3.5-5-1.6-5-3.5"/></svg></div>
-      <span class="eyebrow">Tarifs</span>
-      <h1 style="margin-top:14px;">Des tarifs clairs, sans surprise</h1>
+  <section class="v2-page-hero">
+    <div class="wrap-v2">
+      <div class="v2-eyebrow">Tarifs</div>
+      <h1>Des tarifs clairs, sans surprise</h1>
       <p class="lede">Devis gratuit avant toute intervention, facture fournie systématiquement. Voici mes tarifs les plus demandés dans la métropole lilloise.</p>
     </div>
   </section>
 
-  <section>
-    <div class="wrap">
-      <div class="price-highlight-grid">
-        <div class="price-highlight">
-          <h3>Diagnostic</h3>
-          <div class="amount">Gratuit<small> *</small></div>
-          <p>* Si intervention réalisée dans la foulée (sinon 20€)</p>
+  <section class="v2-page-section">
+    <div class="wrap-v2">
+      <div class="v2-price-highlights">
+        <div class="v2-price-card">
+          <div class="v2-price-kicker">Diagnostic</div>
+          <div class="v2-price-value"><span class="amount">Gratuit *</span></div>
+          <p class="desc">* Si intervention réalisée dans la foulée (sinon 20€)</p>
         </div>
-        <div class="price-highlight featured">
-          <h3>Dépannage informatique</h3>
-          <div class="amount">79€<small>/h</small></div>
-          <p>Résolution des pannes courantes, sur place ou à distance</p>
+        <div class="v2-price-card featured">
+          <div class="v2-price-kicker">Dépannage informatique</div>
+          <div class="v2-price-value"><span class="amount">79 €</span><span class="per">/ heure</span></div>
+          <p class="desc">Résolution des pannes courantes, sur place ou à distance</p>
         </div>
-        <div class="price-highlight">
-          <h3>Nettoyage &amp; optimisation</h3>
-          <div class="amount">Dès 40€</div>
-          <p>Suppression de virus, nettoyage complet, optimisation des performances</p>
+        <div class="v2-price-card">
+          <div class="v2-price-kicker">Nettoyage &amp; optimisation</div>
+          <div class="v2-price-value"><span class="amount">Dès 40 €</span></div>
+          <p class="desc">Suppression de virus, nettoyage complet, optimisation des performances</p>
         </div>
       </div>
 
-      <div class="price-table">
-        <p class="price-group-label">Dépannage &amp; audit</p>
-        <div class="price-row"><h4>Déplacement à domicile</h4><span>Dès 20€</span></div>
-        <div class="price-row"><h4>Installation / réinstallation Windows</h4><span>Dès 50€</span></div>
-        <div class="price-row"><h4>Récupération de données</h4><span>Sur devis</span></div>
-        <div class="price-row"><h4>Audit de parc informatique (jusqu'à 5 postes)</h4><span>Dès 90€</span></div>
-        <div class="price-row"><h4>Contrat de maintenance pro (par poste, mensuel)</h4><span>Dès 39€/mois</span></div>
-
-        <p class="price-group-label">Équipement &amp; sauvegarde</p>
-        <div class="price-row"><h4>Montage de PC gaming sur mesure</h4><span>Sur devis</span></div>
-        <div class="price-row"><h4>Vente de PC reconditionnés et composants</h4><span>Devis personnalisé</span></div>
-        <div class="price-row"><h4>Mise en place sauvegarde cloud</h4><span>Dès 45€</span></div>
-
-        <p class="price-group-label">Digital &amp; formation</p>
-        <div class="price-row"><h4>Création de site vitrine</h4><span>Dès 350€</span></div>
-        <div class="price-row"><h4>Formation informatique (à l'heure)</h4><span>Dès 35€/h</span></div>
-        <div class="price-row"><h4>Assistance IA <span class="badge-soon" style="margin-left:8px;">bientôt</span></h4><span>—</span></div>
+      <div class="v2-price-table">
+        <p class="v2-price-group">Dépannage &amp; audit</p>
+        <div class="v2-price-row"><span class="name">Déplacement à domicile</span><span class="p">Dès 20€</span></div>
+        <div class="v2-price-row"><span class="name">Installation / réinstallation Windows</span><span class="p">Dès 50€</span></div>
+        <div class="v2-price-row"><span class="name">Récupération de données</span><span class="p">Sur devis</span></div>
+        <div class="v2-price-row"><span class="name">Audit de parc informatique (jusqu'à 5 postes)</span><span class="p">Dès 90€</span></div>
+        <div class="v2-price-row"><span class="name">Contrat de maintenance pro (par poste, mensuel)</span><span class="p">Dès 39€/mois</span></div>
+        <p class="v2-price-group">Équipement &amp; sauvegarde</p>
+        <div class="v2-price-row"><span class="name">Montage de PC gaming sur mesure</span><span class="p">Sur devis</span></div>
+        <div class="v2-price-row"><span class="name">Vente de PC reconditionnés et composants</span><span class="p">Devis personnalisé</span></div>
+        <div class="v2-price-row"><span class="name">Mise en place sauvegarde cloud</span><span class="p">Dès 45€</span></div>
+        <p class="v2-price-group">Digital &amp; formation</p>
+        <div class="v2-price-row"><span class="name">Création de site vitrine</span><span class="p">Dès 350€</span></div>
+        <div class="v2-price-row"><span class="name">Formation informatique (à l'heure)</span><span class="p">Dès 35€/h</span></div>
+        <div class="v2-price-row"><span class="name">Assistance IA <span class="v2-soon">bientôt</span></span><span class="p">—</span></div>
       </div>
 
-      <p class="price-note">Tarifs indicatifs pour la métropole lilloise. Un devis gratuit et détaillé vous est toujours proposé avant toute intervention — jamais de mauvaise surprise sur la facture.</p>
+      <p class="v2-price-note">Tarifs indicatifs pour la métropole lilloise. Un devis gratuit et détaillé vous est toujours proposé avant toute intervention — jamais de mauvaise surprise sur la facture.</p>
     </div>
   </section>
 
-  <section>
-    <div class="wrap">
-      <div class="cta-final">
+  <section class="v2-page-section">
+    <div class="wrap-v2">
+      <div class="v2-page-cta">
         <h2>Une question sur un tarif ?</h2>
         <p>Décrivez-moi votre besoin, je vous réponds avec un devis clair.</p>
-        <a class="btn btn-primary" href="/contact.php">Demander mon devis gratuit</a>
+        <a href="/index.html#contact" class="v2-page-cta-btn">Demander mon devis gratuit <i class="ph ph-arrow-right"></i></a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="site">
-  <div class="wrap footer-inner">
-    <div class="footer-col">
-      <span class="footer-logo-badge"><img src="/images/logo.png" alt="Mon Informaticien Nord" style="height:24px;display:block;"></span>
-      <h3>Mon Informaticien Nord</h3>
-      <p>Informaticien de proximité dans la métropole lilloise.</p>
+<footer class="v2-footer">
+  <div class="wrap-v2 v2-footer-grid">
+    <div>
+      <div class="v2-footer-brand">
+        <img src="/images/logo-mark.png" alt="">
+        <span class="word"><b>MON INFORMATICIEN</b><span>NORD</span></span>
+      </div>
+      <p class="tag">Votre informaticien de confiance dans la métropole lilloise. Entreprises et particuliers.</p>
     </div>
-    <div class="footer-col">
-      <h3>Zone d'intervention</h3>
-      <p>Lille, Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Wattrelos et alentours.</p>
-      <p><a href="/zone-intervention.html">Voir toutes les villes →</a></p>
+    <div>
+      <h4>Services</h4>
+      <div class="v2-footer-links">
+        <a href="/index.html#entreprises">Pour les entreprises</a>
+        <a href="/index.html#particuliers">Pour les particuliers</a>
+        <a href="/index.html#methode">Ma méthode</a>
+        <a href="/tarifs.html">Tarifs</a>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>Contact</h3>
-      <p><a href="tel:0760266332">07 60 26 63 32</a></p>
-      <p><a href="/contact.php">Formulaire de contact</a></p>
+    <div>
+      <h4>Informations</h4>
+      <div class="v2-footer-links">
+        <a href="/index.html#zone">Zone d'intervention</a>
+        <a href="/index.html#faq">Questions fréquentes</a>
+        <a href="/a-propos.html">À propos</a>
+        <a href="/index.html#contact">Contact</a>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>Horaires</h3>
-      <ul class="hours-list">
-        <li><span>Lundi – Vendredi</span><span>9h – 19h</span></li>
-        <li><span>Samedi</span><span>Fermé</span></li>
-        <li><span>Dimanche</span><span>Fermé</span></li>
-      </ul>
+    <div>
+      <h4>Contact</h4>
+      <div class="v2-footer-links">
+        <a href="tel:0760266332">07 60 26 63 32</a>
+        <span>Hem, 59510</span>
+        <span>Lun – Ven, 9h – 19h</span>
+      </div>
     </div>
   </div>
-  <div class="footer-bottom">&copy; 2026 Mon Informaticien Nord — Hem (59) — 07 60 26 63 32</div>
+  <div class="v2-footer-bottom">
+    <span>© 2026 Mon Informaticien Nord — PC Solution</span>
+    <span>Mentions légales · Politique de confidentialité</span>
+  </div>
 </footer>
 
-<script>
-  var toggle = document.querySelector('.dropdown-toggle');
-  var dropdownParent = document.querySelector('.has-dropdown');
-  if(toggle){
-    toggle.addEventListener('click', function(e){
-      e.stopPropagation();
-      var open = dropdownParent.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    document.addEventListener('click', function(e){
-      if(!dropdownParent.contains(e.target)){
-        dropdownParent.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape'){
-        dropdownParent.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-  var navToggle = document.querySelector('.nav-toggle');
-  var navList = document.getElementById('mainNavList');
-  if(navToggle && navList){
-    navToggle.addEventListener('click', function(){
-      var open = navList.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  }
-</script>
+<script src="/js/site-v2.js?v=3"></script>
 </body>
 </html>

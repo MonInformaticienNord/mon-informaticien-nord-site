@@ -1,0 +1,53 @@
+/* Mon Informaticien Nord — design v2 (pages intérieures : tarifs, à propos) */
+
+.v2-nav a[aria-current="page"] { color: var(--violet-dark); font-weight: 500; }
+
+.v2-page-hero { padding: 72px 0 30px; }
+.v2-page-hero h1 { font-size: clamp(34px,4.2vw,52px); line-height: 1.06; letter-spacing: -.03em; font-weight: 500; margin: 0 0 16px; max-width: 760px; text-wrap: balance; }
+.v2-page-hero p.lede { font-size: 17px; line-height: 1.6; color: var(--muted); max-width: 640px; margin: 0; }
+
+.v2-page-section { padding: 22px 0 56px; }
+
+/* Tarifs */
+.v2-price-highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 16px; margin-bottom: 40px; }
+.v2-price-highlights .v2-price-card { background: #ffffff; }
+.v2-price-highlights .v2-price-card.featured { background: linear-gradient(165deg,color-mix(in srgb,#7c3aed 13%,#ffffff),color-mix(in srgb,#4f46e5 5%,#ffffff)); }
+.v2-price-highlights .v2-price-value { margin-bottom: 10px; }
+.v2-price-highlights .v2-price-card p.desc { margin: 0; }
+.v2-price-table { border: 1px solid var(--line); border-radius: 16px; background: #ffffff; overflow: hidden; box-shadow: 0 1px 2px rgba(20,18,43,.04), 0 10px 26px rgba(76,43,168,.06); }
+.v2-price-group { margin: 0; padding: 14px 22px; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--violet-dark); background: var(--violet-tint); border-top: 1px solid var(--line-soft); }
+.v2-price-group:first-child { border-top: 0; }
+.v2-price-row { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding: 15px 22px; border-top: 1px solid var(--line-soft); font-size: 15px; }
+.v2-price-group + .v2-price-row { border-top: 0; }
+.v2-price-row .name { color: var(--ink); }
+.v2-price-row .p { font-weight: 500; color: var(--violet-dark); white-space: nowrap; }
+.v2-soon { margin-left: 8px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; padding: 3px 8px; border-radius: 99px; background: var(--violet-tint); color: var(--violet-dark); }
+.v2-price-note { font-size: 13.5px; line-height: 1.6; color: var(--muted); margin: 18px 4px 0; }
+
+/* À propos */
+.v2-about { display: grid; grid-template-columns: minmax(0,300px) minmax(0,1fr); gap: 52px; align-items: start; }
+.v2-about-panel { padding: 28px; border-radius: 18px; background: linear-gradient(165deg,#ffffff,#fbf9ff); border: 1px solid var(--line-soft); box-shadow: 0 1px 3px rgba(20,18,43,.05), 0 24px 56px rgba(76,43,168,.12); }
+.v2-avatar { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 500; color: #fff; background: var(--grad-brand); box-shadow: 0 10px 26px rgba(109,59,245,.30); margin-bottom: 16px; }
+.v2-about-panel strong { display: block; font-size: 19px; font-weight: 500; }
+.v2-about-panel .role { font-size: 13.5px; color: var(--faint); }
+.v2-about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line-soft); }
+.v2-about-stats .n { font-size: 26px; font-weight: 500; letter-spacing: -.02em; }
+.v2-about-stats .l { font-size: 12.5px; color: var(--faint); }
+.v2-prose p { font-size: 16.5px; line-height: 1.75; color: var(--ink-soft); margin: 0 0 20px; }
+.v2-prose p strong { color: var(--ink); font-weight: 600; }
+
+/* Bandeau d'appel à l'action */
+.v2-page-cta { margin-top: 8px; padding: 44px 32px; border-radius: 18px; text-align: center; color: #fff; background: linear-gradient(140deg,#241c52,#2e1f66 55%,#3d2b8c); }
+.v2-page-cta h2 { font-size: clamp(24px,3vw,32px); letter-spacing: -.02em; font-weight: 500; margin: 0 0 10px; color: #fff; }
+.v2-page-cta p { font-size: 15.5px; color: #d3c9f5; margin: 0 0 24px; }
+.v2 a.v2-page-cta-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; text-decoration: none; color: #fff; padding: 14px 26px; border-radius: 10px; background: var(--grad-brand); box-shadow: 0 10px 28px rgba(109,59,245,.40); }
+.v2 a.v2-page-cta-btn:hover { filter: brightness(1.1); color: #fff; }
+
+@media (max-width: 900px) {
+  .v2-about { grid-template-columns: 1fr; gap: 30px; }
+}
+@media (max-width: 560px) {
+  .v2-page-hero { padding-top: 52px; }
+  .v2-price-row { flex-direction: column; gap: 4px; }
+  .v2-page-cta { padding: 36px 22px; }
+}

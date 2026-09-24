@@ -1,3 +1,16 @@
+# --- REDIRECTIONS (anciennes pages de services supprimées, redondantes avec l'accueil) ---
+RewriteEngine On
+RewriteRule ^depannage-professionnels\.html$ /index.html#entreprises [R=301,NE,L]
+RewriteRule ^audit-parc-informatique\.html$ /index.html#entreprises [R=301,NE,L]
+RewriteRule ^sauvegarde-cloud\.html$ /index.html#entreprises [R=301,NE,L]
+RewriteRule ^creation-site-internet\.html$ /index.html#entreprises [R=301,NE,L]
+RewriteRule ^assistance-ia\.html$ /index.html#entreprises [R=301,NE,L]
+RewriteRule ^materiel-informatique\.html$ /index.html#entreprises [R=301,NE,L]
+RewriteRule ^depannage-particuliers\.html$ /index.html#particuliers [R=301,NE,L]
+RewriteRule ^formation-informatique\.html$ /index.html#particuliers [R=301,NE,L]
+RewriteRule ^zone-intervention\.html$ /index.html#zone [R=301,NE,L]
+# --- FIN REDIRECTIONS ---
+
 # --- MODE MAINTENANCE ---
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/maintenance\.html$

@@ -70,24 +70,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <nav class="main" aria-label="Navigation principale" style="position:relative;">
       <ul id="mainNavList">
         <li><a href="/index.html">Accueil</a></li>
-        <li class="has-dropdown">
-          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-            Services
-            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="/depannage-particuliers.html">Dépannage particuliers</a></li>
-            <li><a href="/depannage-professionnels.html">Dépannage professionnels</a></li>
-            <li><a href="/audit-parc-informatique.html">Audit de parc informatique</a></li>
-            <li><a href="/creation-site-internet.html">Création de sites internet</a></li>
-            <li><a href="/materiel-informatique.html">Vente de matériel</a></li>
-            <li><a href="/assistance-ia.html">Assistance IA</a></li>
-            <li><a href="/formation-informatique.html">Formation informatique</a></li>
-            <li><a href="/sauvegarde-cloud.html">Sauvegarde cloud</a></li>
-          </ul>
-        </li>
+        <li><a href="/index.html#services">Services</a></li>
         <li><a href="/tarifs.html">Tarifs</a></li>
-        <li><a href="/zone-intervention.html">Zone d'intervention</a></li>
+        <li><a href="/index.html#zone">Zone d'intervention</a></li>
         <li><a href="/a-propos.html">À propos</a></li>
       </ul>
       <button class="nav-toggle" aria-expanded="false" aria-controls="mainNavList">Menu</button>
@@ -158,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="footer-col">
       <h3>Zone d'intervention</h3>
       <p>Lille, Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Wattrelos et alentours.</p>
-      <p><a href="/zone-intervention.html">Voir toutes les villes →</a></p>
+      <p><a href="/index.html#zone">Voir la zone d'intervention →</a></p>
     </div>
     <div class="footer-col">
       <h3>Contact</h3>
