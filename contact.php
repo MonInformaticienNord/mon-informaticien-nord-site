@@ -43,14 +43,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HKS03S5NMC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HKS03S5NMC');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact – Mon Informaticien Nord</title>
@@ -159,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </ul>
     </div>
   </div>
-  <div class="footer-bottom">&copy; 2026 Mon Informaticien Nord — Hem (59) — 07 60 26 63 32</div>
+  <div class="footer-bottom">&copy; 2026 Mon Informaticien Nord — Hem (59) — 07 60 26 63 32 — <a href="/mentions-legales.html">Mentions légales</a> · <a href="/politique-de-confidentialite.html">Politique de confidentialité</a></div>
 </footer>
 
 <script>
