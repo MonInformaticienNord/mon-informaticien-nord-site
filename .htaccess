@@ -9,6 +9,8 @@ RewriteRule ^materiel-informatique\.html$ /index.html#entreprises [R=301,NE,L]
 RewriteRule ^depannage-particuliers\.html$ /index.html#particuliers [R=301,NE,L]
 RewriteRule ^formation-informatique\.html$ /index.html#particuliers [R=301,NE,L]
 RewriteRule ^zone-intervention\.html$ /index.html#zone [R=301,NE,L]
+# Page tarifs retirée temporairement (302 = redirection provisoire)
+RewriteRule ^tarifs\.html$ /index.html#tarifs [R=302,NE,L]
 # --- FIN REDIRECTIONS ---
 
 # --- MODE MAINTENANCE ---

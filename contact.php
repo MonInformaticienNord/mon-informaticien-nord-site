@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <ul id="mainNavList">
         <li><a href="/index.html">Accueil</a></li>
         <li><a href="/index.html#services">Services</a></li>
-        <li><a href="/tarifs.html">Tarifs</a></li>
+        <li><a href="/index.html#tarifs">Tarifs</a></li>
         <li><a href="/index.html#zone">Zone d'intervention</a></li>
         <li><a href="/a-propos.html">À propos</a></li>
       </ul>
