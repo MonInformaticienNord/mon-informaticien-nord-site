@@ -178,12 +178,6 @@ a.v2-svc-card:hover, .v2-svc-card:hover { border-color: color-mix(in srgb, #7c3a
 
 /* Méthode */
 .v2-methode { padding: 84px 0; }
-.v2-methode-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap: 26px; }
-.v2-step { position: relative; padding-top: 24px; border-top: 1px solid var(--line); }
-.v2-step.is-first { border-top-color: color-mix(in srgb, #7c3aed 45%, transparent); }
-.v2-step .num { font-size: 12px; color: var(--violet-strong); margin-bottom: 10px; letter-spacing: .1em; }
-.v2-step .t { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
-.v2-step p { font-size: 14px; line-height: 1.6; color: var(--muted); margin: 0; }
 
 /* Stats band (real numbers) */
 .v2-band { background: linear-gradient(140deg,#241c52,#2e1f66 55%,#3d2b8c); position: relative; overflow: hidden; }
@@ -429,4 +423,25 @@ a.v2-contact-card:hover { border-color: var(--violet); background: var(--violet-
 @media (max-width: 760px) {
   .v2 a.v2-cta { display: none; }
   .v2-tel-btn span.txt { display: none; }
+}
+
+/* Méthode */
+.v2-method { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: 56px; align-items: start; }
+.v2-method-intro { position: sticky; top: 100px; }
+.v2-msteps { list-style: none; margin: 0; padding: 0; position: relative; }
+.v2-mstep { position: relative; display: grid; grid-template-columns: 56px minmax(0,1fr); gap: 22px; padding-bottom: 34px; }
+.v2-mstep:last-child { padding-bottom: 0; }
+.v2-mstep:not(:last-child)::after { content: ""; position: absolute; left: 27px; top: 56px; bottom: 0; width: 2px; background: linear-gradient(180deg, rgba(124,58,237,.4), rgba(124,58,237,.15)); }
+.v2-mstep-num {
+  position: relative; z-index: 1; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 17px; font-weight: 500; color: var(--violet-dark); background: #ffffff;
+  border: 1px solid color-mix(in srgb, #7c3aed 35%, transparent); box-shadow: 0 8px 22px rgba(109,59,245,.16);
+}
+.v2-mstep:first-child .v2-mstep-num { color: #fff; background: var(--grad-brand); border-color: transparent; }
+.v2-mstep-body { padding-top: 7px; }
+.v2-mstep-body h3 { font-size: 20px; font-weight: 500; letter-spacing: -.015em; margin: 0 0 8px; }
+.v2-mstep-body p { font-size: 15px; line-height: 1.65; color: var(--muted); margin: 0; }
+@media (max-width: 900px) {
+  .v2-method { grid-template-columns: 1fr; gap: 34px; }
+  .v2-method-intro { position: static; }
 }
